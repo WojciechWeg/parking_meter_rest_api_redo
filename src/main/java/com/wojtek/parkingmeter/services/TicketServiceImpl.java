@@ -1,12 +1,9 @@
 package com.wojtek.parkingmeter.services;
 
 import com.wojtek.parkingmeter.helpers.*;
-import com.wojtek.parkingmeter.helpers.enums.HasStartedEnum;
 import com.wojtek.parkingmeter.helpers.enums.TicketType;
 import com.wojtek.parkingmeter.mapper.TicketMapper;
 import com.wojtek.parkingmeter.model.CarEntity;
-import com.wojtek.parkingmeter.model.DTO.HasStarted;
-import com.wojtek.parkingmeter.model.DTO.Sum;
 import com.wojtek.parkingmeter.model.TicketEntity;
 
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
@@ -35,10 +32,10 @@ public class TicketServiceImpl implements TicketService {
     }
 
     @Override
-    public TicketDTO startTicket(String ticket_type, String nr_plate) {
+    public TicketDTO startTicket(String ticketType, String numberPlate) {
 
-        TicketEntity newTicketEntity = new TicketEntity(TicketType.valueOf(ticket_type.toUpperCase()), LocalDateTime.now(), LocalDateTime.of(0, 1, 1, 0, 0, 0, 0));
-        CarEntity carEntity = new CarEntity(nr_plate);
+        TicketEntity newTicketEntity = new TicketEntity(TicketType.valueOf(ticketType.toUpperCase()), LocalDateTime.now(), LocalDateTime.of(0, 1, 1, 0, 0, 0, 0));
+        CarEntity carEntity = new CarEntity(numberPlate);
         carEntity.addTicket(newTicketEntity);
         carRepository.save(carEntity);
 
@@ -62,8 +59,8 @@ public class TicketServiceImpl implements TicketService {
         // gdy nie ma biletu o takim id
 
         if (stopTicketEntity.getCarEntity() != null) {
-            Long id_car = stopTicketEntity.getCarEntity().getId();
-            carRepository.deleteById(id_car);
+            Long carID = stopTicketEntity.getCarEntity().getId();
+            carRepository.deleteById(carID);
         }
 
 
@@ -74,7 +71,7 @@ public class TicketServiceImpl implements TicketService {
     }
 
     @Override
-    public String checkCharge(Long id) {
+    public double checkCharge(Long id) {
 
         Optional<TicketEntity> ticketOptional = ticketRepository.findById(id);
 
@@ -87,34 +84,32 @@ public class TicketServiceImpl implements TicketService {
         TicketType ticketType = ticketEntity.getTicketType();
 
 
-        return Double.toString(ChargeCalculator.charge(ticketType, ticketEntity.getDuration()));
+        return ChargeCalculator.charge(ticketType, ticketEntity.getDuration());
 
     }
 
     @Override
-    public Sum checkSum() {
+    public double checkSum() {
 
-        Double sum = jdbcTemplate.queryForObject("SELECT sum(charge) FROM TICKETS", Double.class);
-        Sum sumJSON = new Sum(sum);
-
-        return sumJSON;
+       return jdbcTemplate.queryForObject("SELECT sum(charge) FROM TICKETS", Double.class);
+        
     }
 
     @Override
-    public HasStarted hasStarted(String nr_plate) {
+    public boolean hasStarted(String numberPlate) {
 
-        HasStarted hasStarted = new HasStarted(HasStartedEnum.YES);
+        boolean hasStarted = true;
 
         int id = 0;
 
         try {
             // pobierz id samochodu którego znamy numery tablicy rejestracujnej
             id = jdbcTemplate.queryForObject(
-                    "SELECT ID FROM CARS WHERE NR_PLATE = \'" + nr_plate + "\'", Integer.class);
+                    "SELECT ID FROM CARS WHERE nr_plate = \'" + numberPlate + "\'", Integer.class);
             if (id == 0)
-                hasStarted.setHasStarted(HasStartedEnum.NO);
+                hasStarted = false;
         } catch (EmptyResultDataAccessException e) {
-            hasStarted.setHasStarted(HasStartedEnum.NO);
+            hasStarted = false;
         }
 
         if (id != 0) {
@@ -125,13 +120,13 @@ public class TicketServiceImpl implements TicketService {
             } catch (EmptyResultDataAccessException e) {
                 // jesli ticketID == null to znaczy że auto jest na parkingu bez biletu
                 if (ticketID.equals(0))
-                    hasStarted.setHasStarted(HasStartedEnum.NO);
+                    hasStarted = false;
                 // jeśłi ticketID != null to znaczy że auto ma bilet
 
             }
 
             if (!ticketID.equals(0))
-                hasStarted.setHasStarted(HasStartedEnum.YES);
+                hasStarted = true;
         }
 
         return hasStarted;

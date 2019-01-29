@@ -9,15 +9,15 @@ public class ChargeCalculator {
     public static double charge(TicketType ticketType, Duration duration) {
 
         if (TicketType.REGULAR == ticketType)
-            return regular(Math.abs(duration.toHours()));
+            return countRegularTicketType(Math.abs(duration.toHours()));
 
         if (TicketType.DISABLED.equals(ticketType))
-            return disabled(Math.abs(duration.toHours()));
+            return countDisabledTicketType(Math.abs(duration.toHours()));
 
         return -1.0;
     }
 
-    static double regular(Long duration) {
+    static double countRegularTicketType(Long duration) {
 
         double charge = 0.0;
 
@@ -37,7 +37,7 @@ public class ChargeCalculator {
         return charge;
     }
 
-    static double disabled(Long duration) {
+    static double countDisabledTicketType(Long duration) {
 
         double charge = 0.0;
 

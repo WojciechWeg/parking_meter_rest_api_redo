@@ -1,9 +1,6 @@
 package com.wojtek.parkingmeter.controllers;
 
 import com.wojtek.parkingmeter.helpers.*;
-import com.wojtek.parkingmeter.helpers.enums.HasStartedEnum;
-import com.wojtek.parkingmeter.model.DTO.HasStarted;
-import com.wojtek.parkingmeter.model.DTO.Sum;
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
 import com.wojtek.parkingmeter.services.TicketService;
 import org.springframework.http.HttpStatus;
@@ -24,14 +21,14 @@ public class TicketController {
         this.ticketService = ticketService;
     }
 
-    @GetMapping("/start/{ticket_type}/{nr_plate}")
-    public ResponseEntity<TicketDTO> startTicket(@PathVariable String ticket_type, @PathVariable String nr_plate) {
+    @GetMapping("/start/{ticketType}/{numberPlate}")
+    public ResponseEntity<TicketDTO> startTicket(@PathVariable String ticketType, @PathVariable String numberPlate) {
 
 
-        if (ticketService.hasStarted(nr_plate).getHasStarted().equals(HasStartedEnum.YES))
+        if (ticketService.hasStarted(numberPlate))
             return ResponseEntity.status(HttpStatus.IM_USED).body(new TicketDTO()); // tutaj bym zwrócił info że takkie auto ma już bilet. Użyłem HttpStatus.IM_USED, ale chyba to nie do tego.
-        if (Validator.validateNewTicket(ticket_type, nr_plate))
-            return ResponseEntity.ok().body(ticketService.startTicket(ticket_type, nr_plate));
+        if (Validator.validateNewTicket(ticketType, numberPlate))
+            return ResponseEntity.ok().body(ticketService.startTicket(ticketType, numberPlate));
         else
             return ResponseEntity.badRequest().body(new TicketDTO());
 
@@ -55,31 +52,29 @@ public class TicketController {
     }
 
     @GetMapping("/check_charge/{id}")
-    public ResponseEntity<String> checkCharge(@PathVariable Long id) {
+    public ResponseEntity<Double> checkCharge(@PathVariable Long id) {
 
         try {
             return ResponseEntity.ok(ticketService.checkCharge(id));
         } catch (NoSuchElementException e) {
-            String noSuchTicket = "TICKET DOES NOT EXIST";
-            return ResponseEntity.badRequest().body(noSuchTicket);
+            return ResponseEntity.badRequest().body(-1.0); // tutaj była zmiana z String na Double stąd body ustawiona na -1 zmiast "NO SUCH TICKET"
         }
 
     }
 
     @GetMapping("/sum")
-    public ResponseEntity<Sum> checkSum() {
+    public ResponseEntity<Double> checkSum() {
         return ResponseEntity.ok(ticketService.checkSum());
     }
 
-    @GetMapping("/hasStarted/{nr_plate}")
-    public ResponseEntity<HasStarted> hasStarted(@PathVariable String nr_plate) {
+    @GetMapping("/hasStarted/{numberPlate}")
+    public ResponseEntity<Boolean> hasStarted(@PathVariable String numberPlate) {
 
-        if (nr_plate.length() != 5) {
-            HasStarted hsj = new HasStarted(HasStartedEnum.INVALID_NR_PLATE);
-            return ResponseEntity.badRequest().body(hsj);
+        if (numberPlate.length() != 5) {
+            return ResponseEntity.badRequest().body(false);
         }
 
-        return ResponseEntity.ok(ticketService.hasStarted(nr_plate));
+        return ResponseEntity.ok(ticketService.hasStarted(numberPlate));
 
     }
 }

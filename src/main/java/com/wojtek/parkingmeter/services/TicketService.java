@@ -1,20 +1,18 @@
 package com.wojtek.parkingmeter.services;
 
-import com.wojtek.parkingmeter.model.DTO.HasStarted;
-import com.wojtek.parkingmeter.model.DTO.Sum;
 import com.wojtek.parkingmeter.model.TicketEntity;
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
 
 public interface TicketService {
 
-    TicketDTO startTicket(String ticket_type, String nr_plate);
+    TicketDTO startTicket(String ticketType, String numberPlate);
 
     TicketEntity stopTicket(Long id);
 
-    String checkCharge(Long id);
+    double checkCharge(Long id);
 
-    Sum checkSum();
+    double checkSum();
 
-    HasStarted hasStarted(String nr_plate);
+    boolean hasStarted(String numberPlate);
 
 }

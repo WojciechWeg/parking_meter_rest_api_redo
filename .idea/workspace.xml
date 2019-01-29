@@ -6,7 +6,50 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b5049c-8fe0-4d42-aecc-32cba0ceb29d" name="Default Changelist" comment="" />
+    <list default="true" id="27b5049c-8fe0-4d42-aecc-32cba0ceb29d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06a8ec65cbcdfd08b2e655a7f8e0b2f650ee7e8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c17bafa617023c548c106bb67c39f7a974df71a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c17bafa617023c548c106bb67c39f7a974df71a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f1fce77fb4a3bd5d5b9533276ee8caa8f463036" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/361d1370195554030600a5b805df7b681f644288" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37c92e7488a70b2cd0b8de39535c3f860e489210" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/716ec48915c3898b9bb8384ac421f050ed588642" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/716ec48915c3898b9bb8384ac421f050ed588642" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91f5ce64f659a743896a7c4696a400dd4a29b680" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91f5ce64f659a743896a7c4696a400dd4a29b680" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/9451835592474ff9de336066ddfbd6c3c4a47333" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a913d882fc04732724a06d284be86ab2270dc167" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a913d882fc04732724a06d284be86ab2270dc167" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5f171cf2bfd45def66b1c41f8b988027e59f675" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5f171cf2bfd45def66b1c41f8b988027e59f675" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2bf4a9949abe1b94885e1ab54d2ce26262ff936" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2bf4a9949abe1b94885e1ab54d2ce26262ff936" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6a957316afd2a865751214c639c3483b41bf404" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa2564f19c52cfd472fd799e3d7c8ab5c68b4bee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa865959eaf4004a048fbdbc9ac16a09e51f9519" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa865959eaf4004a048fbdbc9ac16a09e51f9519" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/HasStarted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/Sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/ParkingMeterRestApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerCheckChargeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerHasStartedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStartTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerSumTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/helpers/ChargeCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/controllers/TicketController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/controllers/TicketController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/helpers/ChargeCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/helpers/ChargeCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/model/TicketEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/model/TicketEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/wojtek/parkingmeter/mapper/TicketMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/wojtek/parkingmeter/mapper/TicketMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wojtek/parkingmeter/ParkingMeterRestApiApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wojtek/parkingmeter/controllers/TicketControllerCheckChargeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wojtek/parkingmeter/controllers/TicketControllerHasStartedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wojtek/parkingmeter/controllers/TicketControllerStartTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wojtek/parkingmeter/controllers/TicketControllerStopTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wojtek/parkingmeter/controllers/TicketControllerSumTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wojtek/parkingmeter/helpers/ChargeCalculatorTest.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,8 +141,34 @@
     <session id="-1533348901">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="14" />
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="14" />
+          <entry key="Markdown" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="249" />
+          <entry key="txt" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="249" />
+          <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
     </session>
@@ -119,67 +188,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/bootstrap/Bootstrap.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Validator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-146">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/enums/HasStartedEnum.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/config/SwaggerConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/TicketDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStopTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerSumTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/helpers/ChargeCalculatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="204">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -188,7 +218,47 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/TicketEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+              <folding>
+                <element signature="e#2704#2705#0" expanded="true" />
+                <element signature="e#2770#2771#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="107" column="55" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -211,11 +281,21 @@
       <find>lombok</find>
       <find>Double</find>
       <find>gdy nie</find>
+      <find>regular</find>
+      <find>nr_plate</find>
+      <find>ticket_type</find>
+      <find>id_car</find>
     </findStrings>
+    <replaceStrings>
+      <replace>countAsRegular</replace>
+      <replace>numberPlate</replace>
+      <replace>ticketType</replace>
+      <replace>carID</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/parking_meter_rest_api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="project_concept_remake" />
@@ -226,7 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/repositories/ParkingOperatorRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/repositories/ParkingOwnerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/modelDAO/ParkingOwnerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/modelDAO/ParkingOperatorDAO.java" />
@@ -261,22 +340,23 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/TicketDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/SumJSON.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Sum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/Sum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/TicketDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/CarEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerHasStartedTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStartTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStopTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerSumTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/TicketEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/bootstrap/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/Sum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -343,38 +423,38 @@
         <subPane>
           <expand>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -382,8 +462,8 @@
               <item name="wojtek" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -392,8 +472,8 @@
               <item name="parkingmeter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -403,8 +483,8 @@
               <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -414,8 +494,8 @@
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -425,8 +505,8 @@
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -436,8 +516,8 @@
               <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -447,8 +527,8 @@
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -458,8 +538,20 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wojtek" type="462c0819:PsiDirectoryNode" />
+              <item name="parkingmeter" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -469,8 +561,8 @@
               <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -480,10 +572,34 @@
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="parking_meter_rest_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking_meter_rest_api" type="462c0819:PsiDirectoryNode" />
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parking_meter_rest_api_redo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking_meter_rest_api_redo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wojtek" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -500,7 +616,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548548162403" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548761083636" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -508,7 +624,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38023257" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -533,7 +649,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in parking_meter_rest_api">
+  <component name="RunManager" selected="Spring Boot.ParkingMeterRestApiApplication">
     <configuration name="All in parking_meter_rest_api" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="parking_meter_rest_api" />
       <option name="PACKAGE_NAME" value="" />
@@ -673,7 +789,8 @@
       <workItem from="1548503647955" duration="5520000" />
       <workItem from="1548511552592" duration="16558000" />
       <workItem from="1548707017156" duration="656000" />
-      <workItem from="1548711955080" duration="305000" />
+      <workItem from="1548711955080" duration="5439000" />
+      <workItem from="1548757590866" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1547388862814</created>
@@ -955,16 +1072,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548548129114</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add readme.md">
+      <created>1548712636385</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1548712636385</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_parking_meter_rest_api - 2019.01.26 at 23h 03m 45s.xml">
-      <configuration name="All in parking_meter_rest_api" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_parking_meter_rest_api - 2019.01.26 at 23h 12m 24s.xml">
-      <configuration name="All in parking_meter_rest_api" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_parking_meter_rest_api - 2019.01.26 at 23h 20m 42s.xml">
       <configuration name="All in parking_meter_rest_api" configurationId="JUnit" />
     </history-entry>
@@ -989,9 +1107,15 @@
     <history-entry file="All_in_parking_meter_rest_api - 2019.01.26 at 23h 41m 16s.xml">
       <configuration name="All in parking_meter_rest_api" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_parking_meter_rest_api - 2019.01.28 at 22h 58m 28s.xml">
+      <configuration name="All in parking_meter_rest_api" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_parking_meter_rest_api - 2019.01.29 at 01h 43m 03s.xml">
+      <configuration name="All in parking_meter_rest_api" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170429000" />
+    <option name="totallyTimeSpent" value="178376000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1004,8 +1128,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2563966" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1015,7 +1140,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917467" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.4452975" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.3761996" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1026,7 +1151,7 @@
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.32917467" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32917467" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" visible="true" weight="0.4472169" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" weight="0.4472169" />
       <window_info anchor="bottom" id="SonarLint" order="14" weight="0.24184261" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1084,7 +1209,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TicketDTO" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/parking_meter_rest_api" />
+    </ignored-roots>
     <MESSAGE value="GET ticket_id/stop" />
     <MESSAGE value="parking operator check" />
     <MESSAGE value="amendments + swagger" />
@@ -1109,7 +1236,8 @@
     <MESSAGE value="amendments part xyz" />
     <MESSAGE value="amendments part xyz123" />
     <MESSAGE value="first commit on project_concept_change" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit on project_concept_change" />
+    <MESSAGE value="add readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme.md" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/repositories/ParkingOperatorRepository.java" />
@@ -1149,13 +1277,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/ParkingMeterRestApiApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/ParkingMeterRestApiApplicationTests.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/jre/lib/rt.jar!/java/lang/Double.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1177,7 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/repositories/CarRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1213,102 +1334,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/enums/HasStartedEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/enums/TicketType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/HasStarted.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/Sum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/TicketDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerCheckChargeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerHasStartedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStartTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerCheckChargeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerHasStartedTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStartTest.java" />
     <entry file="file://$PROJECT_DIR$/start.sh" />
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/CarEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/bootstrap/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStopTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerSumTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/helpers/ChargeCalculatorTest.java" />
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="25" selection-start-column="25" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1319,45 +1359,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStopTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/bootstrap/Bootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="-79">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/controllers/TicketControllerSumTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/enums/TicketType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wojtek/parkingmeter/helpers/ChargeCalculatorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="238">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/HasStarted.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="323">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="e#2704#2705#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/TicketDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/DTO/Sum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/enums/HasStartedEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/CarEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/model/TicketEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+        <state relative-caret-position="217">
+          <caret line="107" column="55" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
         </state>
       </provider>
     </entry>

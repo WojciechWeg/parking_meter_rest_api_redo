@@ -11,18 +11,6 @@ R
 "src/main/java/META-INF/MANIFEST.MF,6\3\63ef5783cbf71fdf39c1fd6ae6873fd812259930
 Y
 )src/main/resources/application.properties,0\6\06f65155ec73600b9fc5c4dc2883d4bb84d8e284
-w
-Gsrc/test/java/com/wojtek/parkingmeter/helpers/ChargeCalculatorTest.java,2\f\2f1fce77fb4a3bd5d5b9533276ee8caa8f463036
-~
-Nsrc/test/java/com/wojtek/parkingmeter/controllers/TicketControllerSumTest.java,0\6\06a8ec65cbcdfd08b2e655a7f8e0b2f650ee7e8e
-
-Osrc/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStopTest.java,3\6\361d1370195554030600a5b805df7b681f644288
-…
-Usrc/test/java/com/wojtek/parkingmeter/controllers/TicketControllerHasStartedTest.java,f\6\f6a957316afd2a865751214c639c3483b41bf404
-†
-Vsrc/test/java/com/wojtek/parkingmeter/controllers/TicketControllerCheckChargeTest.java,f\a\fa2564f19c52cfd472fd799e3d7c8ab5c68b4bee
-~
-Nsrc/test/java/com/wojtek/parkingmeter/ParkingMeterRestApiApplicationTests.java,9\4\9451835592474ff9de336066ddfbd6c3c4a47333
 U
 %.mvn/wrapper/maven-wrapper.properties,3\2\32e074f71d16c1e88ac02aa83592ca6ad1fd98a8
 4
@@ -39,8 +27,6 @@ n
 >src/main/java/com/wojtek/parkingmeter/mapper/TicketMapper.java,9\3\93cea5edde93f04842ab3a0a829491b0a0b711bb
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-€
-Psrc/test/java/com/wojtek/parkingmeter/controllers/TicketControllerStartTest.java,3\7\37c92e7488a70b2cd0b8de39535c3f860e489210
 m
 =src/main/java/com/wojtek/parkingmeter/model/TicketEntity.java,2\e\2ef6bbb30eb94093af51aae831d347bedf81ef43
 s
@@ -67,3 +53,5 @@ h
 8src/main/java/com/wojtek/parkingmeter/model/DTO/Sum.java,f\a\fa865959eaf4004a048fbdbc9ac16a09e51f9519
 n
 >src/main/java/com/wojtek/parkingmeter/model/DTO/TicketDTO.java,d\f\dfea56e6cfc00326ca8de2126231434c789a8bd2
+9
+	readme.md,2\7\275d783e298228506068436512433d343feb52aa

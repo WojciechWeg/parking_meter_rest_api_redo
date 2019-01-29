@@ -8,11 +8,11 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class Validator {
 
 
-    public static boolean validateNewTicket(String ticket_type, String nr_plate) {
+    public static boolean validateNewTicket(String ticketType, String numberPlate) {
 
-        if (nr_plate.length() == 5) {
-            if (TicketType.DISABLED.toString().equals(ticket_type.toUpperCase()) ||
-                    TicketType.REGULAR.toString().equals(ticket_type.toUpperCase())) {
+        if (numberPlate.length() == 5) {
+            if (TicketType.DISABLED.toString().equals(ticketType.toUpperCase()) ||
+                    TicketType.REGULAR.toString().equals(ticketType.toUpperCase())) {
                 return true;
             }
 
