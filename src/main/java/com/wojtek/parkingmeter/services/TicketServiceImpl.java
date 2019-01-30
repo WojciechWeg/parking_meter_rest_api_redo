@@ -13,6 +13,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -21,12 +22,14 @@ public class TicketServiceImpl implements TicketService {
 
     private final TicketRepository ticketRepository;
     private final CarRepository carRepository;
+
     private final TicketMapper ticketMapper;
     private final JdbcTemplate jdbcTemplate;
 
     public TicketServiceImpl(TicketRepository ticketRepository, CarRepository carRepository, TicketMapper ticketMapper, JdbcTemplate jdbcTemplate) {
         this.ticketRepository = ticketRepository;
         this.carRepository = carRepository;
+
         this.ticketMapper = ticketMapper;
         this.jdbcTemplate = jdbcTemplate;
     }
@@ -71,7 +74,7 @@ public class TicketServiceImpl implements TicketService {
     }
 
     @Override
-    public double checkCharge(Long id) {
+    public BigDecimal checkCharge(Long id) {
 
         Optional<TicketEntity> ticketOptional = ticketRepository.findById(id);
 
@@ -89,9 +92,9 @@ public class TicketServiceImpl implements TicketService {
     }
 
     @Override
-    public double checkSum() {
+    public BigDecimal checkSum() {
 
-       return jdbcTemplate.queryForObject("SELECT sum(charge) FROM TICKETS", Double.class);
+       return ticketRepository.returnSumOfAllTickets().setScale(2);
         
     }
 
@@ -100,23 +103,25 @@ public class TicketServiceImpl implements TicketService {
 
         boolean hasStarted = true;
 
-        int id = 0;
+        Integer CarID = 0;
 
         try {
             // pobierz id samochodu którego znamy numery tablicy rejestracujnej
-            id = jdbcTemplate.queryForObject(
-                    "SELECT ID FROM CARS WHERE nr_plate = \'" + numberPlate + "\'", Integer.class);
-            if (id == 0)
+
+            CarID = carRepository.findIdByNrPlate(numberPlate);
+            if(CarID==null)
+               return  false;
+
+            if (CarID == 0)
                 hasStarted = false;
         } catch (EmptyResultDataAccessException e) {
             hasStarted = false;
         }
 
-        if (id != 0) {
+        if (CarID != 0) {
             Integer ticketID = 0;
-            // pobierzmy id biletu takiego samochodu
             try {
-                ticketID = jdbcTemplate.queryForObject("SELECT ID FROM TICKETS WHERE CAR_ID = " + id + "", Integer.class);
+                ticketID = ticketRepository.findTicketIDByCarID(CarID);
             } catch (EmptyResultDataAccessException e) {
                 // jesli ticketID == null to znaczy że auto jest na parkingu bez biletu
                 if (ticketID.equals(0))

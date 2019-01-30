@@ -2,12 +2,13 @@ package com.wojtek.parkingmeter.mapper;
 
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
 import com.wojtek.parkingmeter.model.TicketEntity;
+import java.math.BigDecimal;
 import javax.annotation.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2019-01-28T22:58:10+0100",
+    date = "2019-01-29T14:48:54+0100",
     comments = "version: 1.2.0.CR2, compiler: javac, environment: Java 1.8.0_151 (Oracle Corporation)"
 )
 @Component
@@ -22,7 +23,9 @@ public class TicketMapperImpl implements TicketMapper {
         TicketDTO ticketDTO = new TicketDTO();
 
         ticketDTO.setTicketType( ticketEntity.getTicketType() );
-        ticketDTO.setCharge( ticketEntity.getCharge() );
+        if ( ticketEntity.getCharge() != null ) {
+            ticketDTO.setCharge( ticketEntity.getCharge().doubleValue() );
+        }
         ticketDTO.setStampStart( ticketEntity.getStampStart() );
         ticketDTO.setId( ticketEntity.getId() );
 
@@ -39,7 +42,7 @@ public class TicketMapperImpl implements TicketMapper {
 
         ticketEntity.setId( ticketDTO.getId() );
         ticketEntity.setTicketType( ticketDTO.getTicketType() );
-        ticketEntity.setCharge( ticketDTO.getCharge() );
+        ticketEntity.setCharge( BigDecimal.valueOf( ticketDTO.getCharge() ) );
         ticketEntity.setStampStart( ticketDTO.getStampStart() );
 
         return ticketEntity;

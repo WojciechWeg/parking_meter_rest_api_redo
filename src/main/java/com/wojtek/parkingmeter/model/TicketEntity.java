@@ -4,6 +4,7 @@ import com.wojtek.parkingmeter.helpers.ChargeCalculator;
 import com.wojtek.parkingmeter.helpers.enums.TicketType;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
@@ -28,7 +29,7 @@ public class TicketEntity {
     private TicketType ticketType;
 
     @Column(name = "charge")
-    private double charge;
+    private BigDecimal charge;
 
     @Column(name = "stamp_start")
     private LocalDateTime stampStart;
@@ -57,11 +58,11 @@ public class TicketEntity {
         this.ticketType = ticketType;
     }
 
-    public double getCharge() {
+    public BigDecimal getCharge() {
         return charge;
     }
 
-    public void setCharge(double charge) {
+    public void setCharge(BigDecimal charge) {
         this.charge = charge;
     }
 

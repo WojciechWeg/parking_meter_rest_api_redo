@@ -1,14 +1,6 @@
 
-squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(Œ”°“şÿÿÿÿ
-Asquid:S00108")Either remove or fill this block of code.(àŞÀü
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ¾õ•øÿÿÿÿ
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ¾õ•øÿÿÿÿ
-Xsquid:S1126"AReplace this if-then-else statement by a single return statement.(€ÜùÍ
-nsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(ÓÀ²©øÿÿÿÿ
-Asquid:S1481("*Remove this unused "carID" local variable.(ş½ì·
-Rsquid:S1066"/Merge this if statement with the enclosing one.(Œ”°“şÿÿÿÿ8±ôâßˆ-
-Xsquid:S1118":Add a private constructor to hide the implicit public one.(Äáœ8«ŠáÜˆ-
-Psquid:S1854*"9Remove this useless assignment to local variable "carID".(Ö‰™Æ
-squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ÑŒ–ì8±ôâßˆ-
-isquid:S2077*"RUse a variable binding mechanism to construct this query instead of concatenation.(Ö‰™Æ
-|squid:UselessImportCheck"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ
+†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-
+Ssquid:S1068"0Remove this unused "jdbcTemplate" private field.(êµ…ªøÿÿÿÿ8ôùİ‰-
+†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ï¼ØÑúÿÿÿÿ8±ôâßˆ-
+Rsquid:S1066"/Merge this if statement with the enclosing one.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-
+squid:UselessImportCheck"VRemove this unused import 'com.wojtek.parkingmeter.repositories.TicketRepositoryImpl'.(êóß 8Ã‰ˆŞ‰-

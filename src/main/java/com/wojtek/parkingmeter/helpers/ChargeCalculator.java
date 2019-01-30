@@ -2,11 +2,13 @@ package com.wojtek.parkingmeter.helpers;
 
 import com.wojtek.parkingmeter.helpers.enums.TicketType;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.Duration;
 
 public class ChargeCalculator {
 
-    public static double charge(TicketType ticketType, Duration duration) {
+    public static BigDecimal charge(TicketType ticketType, Duration duration) {
 
         if (TicketType.REGULAR == ticketType)
             return countRegularTicketType(Math.abs(duration.toHours()));
@@ -14,10 +16,10 @@ public class ChargeCalculator {
         if (TicketType.DISABLED.equals(ticketType))
             return countDisabledTicketType(Math.abs(duration.toHours()));
 
-        return -1.0;
+        return BigDecimal.valueOf(-1.0);
     }
 
-    static double countRegularTicketType(Long duration) {
+    static BigDecimal countRegularTicketType(Long duration) {
 
         double charge = 0.0;
 
@@ -34,10 +36,11 @@ public class ChargeCalculator {
                 charge = charge + last_price;
             }
         }
-        return charge;
+
+        return BigDecimal.valueOf(charge).setScale(2);
     }
 
-    static double countDisabledTicketType(Long duration) {
+    static BigDecimal countDisabledTicketType(Long duration) {
 
         double charge = 0.0;
 
@@ -54,7 +57,7 @@ public class ChargeCalculator {
 
             }
         }
-        return charge;
+        return BigDecimal.valueOf(charge).setScale(2);
 
     }
 

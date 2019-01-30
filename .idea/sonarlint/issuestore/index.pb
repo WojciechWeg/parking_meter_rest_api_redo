@@ -31,8 +31,6 @@ m
 =src/main/java/com/wojtek/parkingmeter/model/TicketEntity.java,2\e\2ef6bbb30eb94093af51aae831d347bedf81ef43
 s
 Csrc/main/java/com/wojtek/parkingmeter/helpers/enums/TicketType.java,0\f\0fefd56a249ef65672de00cd2f6976095ddb8f88
-w
-Gsrc/main/java/com/wojtek/parkingmeter/helpers/enums/HasStartedEnum.java,8\9\897efb6bd1243ad5901745db57133ba76e9fba4f
 s
 Csrc/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java,e\2\e2bf4a9949abe1b94885e1ab54d2ce26262ff936
 n
@@ -47,11 +45,13 @@ l
 <src/main/java/com/wojtek/parkingmeter/helpers/Validator.java,7\1\716ec48915c3898b9bb8384ac421f050ed588642
 j
 :src/main/java/com/wojtek/parkingmeter/model/CarEntity.java,a\9\a913d882fc04732724a06d284be86ab2270dc167
-o
-?src/main/java/com/wojtek/parkingmeter/model/DTO/HasStarted.java,e\8\e870415e82012cfc5c12bd670f5bd8c2d652f946
-h
-8src/main/java/com/wojtek/parkingmeter/model/DTO/Sum.java,f\a\fa865959eaf4004a048fbdbc9ac16a09e51f9519
 n
 >src/main/java/com/wojtek/parkingmeter/model/DTO/TicketDTO.java,d\f\dfea56e6cfc00326ca8de2126231434c789a8bd2
 9
 	readme.md,2\7\275d783e298228506068436512433d343feb52aa
+w
+G.idea/sonarlint/issuestore/0/2/02f1ae743114c33d74033b21b4ee4c864adc0e6e,8\6\86d95b032e2afe6a72c0d7f9f7ba1898984fb82f
+|
+Lsrc/main/java/com/wojtek/parkingmeter/repositories/TicketRepositoryImpl.java,d\1\d1bac69e4b359c067cf8a193b7fa3b266948e6af
+x
+Hsrc/main/java/com/wojtek/parkingmeter/repositories/CarRepsitoryImpl.java,1\4\1406d795d179df212fcde5aade92a0196647a679

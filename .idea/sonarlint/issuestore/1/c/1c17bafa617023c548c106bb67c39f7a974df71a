@@ -1,13 +1,9 @@
 
-isquid:S00117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þ€ôë
-Usquid:S2589"7Remove this expression which always evaluates to "true"(šèœ¬8²ªäÜˆ-
-Ssquid:S36557"<Call "stopTicketOpt.isPresent()" before accessing the value.(¢ú…™
-isquid:S2077q"RUse a variable binding mechanism to construct this query instead of concatenation.(ñ¡©Ç
-nsquid:S00117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥Œàÿÿÿÿÿ
-nsquid:S00117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¥Œàÿÿÿÿÿ
-Tsquid:S3655R"=Call "ticketOptional.isPresent()" before accessing the value.(éŸùš
-{squid:S1488b"_Immediately return this expression instead of assigning it to the temporary variable "sumJSON".(±¸’·úÿÿÿÿ
-nsquid:S00117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç»¢”ÿÿÿÿÿ
-?squid:S1940T")Use the opposite operator ("!=") instead.(ßýö
-
-nsquid:S2077|"RUse a variable binding mechanism to construct this query instead of concatenation.(“£¨Ûüÿÿÿÿ
+nsquid:S2077x"RUse a variable binding mechanism to construct this query instead of concatenation.(“£¨Ûüÿÿÿÿ
+[squid:S3655P"=Call "ticketOptional.isPresent()" before accessing the value.(éŸùš8û‘’Ê‰-
+Usquid:S2589{"7Remove this expression which always evaluates to "true"(šèœ¬8²ªäÜˆ-
+Œsquid:S4165‚"hRemove this useless assignment; "hasStarted" already holds the assigned value along all execution paths.(Ç¤è¾üÿÿÿÿ8¦öÃÊ‰-
+nsquid:S2077m"RUse a variable binding mechanism to construct this query instead of concatenation.(ÑÞ„Ûþÿÿÿÿ
+Fsquid:S1940R")Use the opposite operator ("!=") instead.(ßýö
+8û‘’Ê‰-
+Zsquid:S36555"<Call "stopTicketOpt.isPresent()" before accessing the value.(¢ú…™8û‘’Ê‰-

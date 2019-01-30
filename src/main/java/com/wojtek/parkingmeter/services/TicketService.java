@@ -3,15 +3,18 @@ package com.wojtek.parkingmeter.services;
 import com.wojtek.parkingmeter.model.TicketEntity;
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
 
+import java.math.BigDecimal;
+
+
 public interface TicketService {
 
     TicketDTO startTicket(String ticketType, String numberPlate);
 
     TicketEntity stopTicket(Long id);
 
-    double checkCharge(Long id);
+    BigDecimal checkCharge(Long id);
 
-    double checkSum();
+    BigDecimal checkSum();
 
     boolean hasStarted(String numberPlate);
 
