@@ -1,6 +1,4 @@
 
-†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-
-Ssquid:S1068"0Remove this unused "jdbcTemplate" private field.(êµ…ªøÿÿÿÿ8ôùİ‰-
-†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ï¼ØÑúÿÿÿÿ8±ôâßˆ-
-Rsquid:S1066"/Merge this if statement with the enclosing one.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-
-squid:UselessImportCheck"VRemove this unused import 'com.wojtek.parkingmeter.repositories.TicketRepositoryImpl'.(êóß 8Ã‰ˆŞ‰-
+†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ï¼ØÑúÿÿÿÿ8±ôâßˆ-
+†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-
+Rsquid:S1066"/Merge this if statement with the enclosing one.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-

@@ -27,18 +27,18 @@ public class Bootstrap implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        load_tickets();
+        loadTickets();
 
-        load_cars();
+        loadCars();
     }
 
-    private void load_cars() {
+    private void loadCars() {
         CarEntity carEntity1 = new CarEntity("00000");
 
         carRepository.save(carEntity1);
     }
 
-    private void load_tickets() {
+    private void loadTickets() {
         TicketEntity ticketEntity1 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 19, 30, 00, 00));
 
         ticketEntity1.setCharge(ChargeCalculator.charge(ticketEntity1.getTicketType(), ticketEntity1.getDuration()));

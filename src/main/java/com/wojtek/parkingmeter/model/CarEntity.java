@@ -12,9 +12,9 @@ public class CarEntity {
     protected CarEntity() {
     }
 
-    public CarEntity(String nr_plate) {
+    public CarEntity(String nrPlate) {
 
-        this.nr_plate = nr_plate;
+        this.nrPlate = nrPlate;
     }
 
     @Id
@@ -22,7 +22,7 @@ public class CarEntity {
     private Long id;
 
     @Column(name = "nr_plate")
-    private String nr_plate;
+    private String nrPlate;
 
     @OneToMany(mappedBy = "carEntity", cascade = {CascadeType.ALL})
     @JsonIgnoreProperties(value = {"carEntity"})
@@ -45,12 +45,12 @@ public class CarEntity {
         this.id = id;
     }
 
-    public String getNr_plate() {
-        return nr_plate;
+    public String getNrPlate() {
+        return nrPlate;
     }
 
-    public void setNr_plate(String nr_plate) {
-        this.nr_plate = nr_plate;
+    public void setNrPlate(String nrPlate) {
+        this.nrPlate = nrPlate;
     }
 
     public List<TicketEntity> getTicketEntities() {

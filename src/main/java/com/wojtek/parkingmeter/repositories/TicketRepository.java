@@ -9,10 +9,6 @@ import java.math.BigDecimal;
 
 public interface TicketRepository extends CrudRepository<TicketEntity, Long> {
 
-    @Query(value = "SELECT ID FROM TICKETS WHERE CAR_ID = ?1", nativeQuery = true)
-    Integer findTicketIDByCarID(Integer carID);
-
-
     @Query(value = "SELECT sum(charge) FROM TICKETS", nativeQuery = true)
     BigDecimal returnSumOfAllTickets();
 }

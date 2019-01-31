@@ -1,9 +1,6 @@
 
-nsquid:S2077x"RUse a variable binding mechanism to construct this query instead of concatenation.(“£¨Ûüÿÿÿÿ
-[squid:S3655P"=Call "ticketOptional.isPresent()" before accessing the value.(éŸùš8û‘’Ê‰-
-Usquid:S2589{"7Remove this expression which always evaluates to "true"(šèœ¬8²ªäÜˆ-
-Œsquid:S4165‚"hRemove this useless assignment; "hasStarted" already holds the assigned value along all execution paths.(Ç¤è¾üÿÿÿÿ8¦öÃÊ‰-
-nsquid:S2077m"RUse a variable binding mechanism to construct this query instead of concatenation.(ÑÞ„Ûþÿÿÿÿ
-Fsquid:S1940R")Use the opposite operator ("!=") instead.(ßýö
-8û‘’Ê‰-
-Zsquid:S36555"<Call "stopTicketOpt.isPresent()" before accessing the value.(¢ú…™8û‘’Ê‰-
+Zsquid:S36553"<Call "stopTicketOpt.isPresent()" before accessing the value.(¢ú…™8û‘’Ê‰-
+[squid:S2589i"8Remove this expression which always evaluates to "false"(Ì¼Çµýÿÿÿÿ8°Þµ‡Š-
+psquid:S00117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªâ¿ª8«Ê ‡Š-
+dsquid:S1126i"AReplace this if-then-else statement by a single return statement.(Ì¼Çµýÿÿÿÿ8Ÿ¥¶‡Š-
+[squid:S3655L"=Call "ticketOptional.isPresent()" before accessing the value.(éŸùš8û‘’Ê‰-
