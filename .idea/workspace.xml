@@ -9,7 +9,6 @@
     <list default="true" id="27b5049c-8fe0-4d42-aecc-32cba0ceb29d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/helpers/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wojtek/parkingmeter/helpers/Validator.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -135,7 +134,7 @@
         <counts>
           <entry key="java" value="3010" />
           <entry key="md" value="179" />
-          <entry key="txt" value="257" />
+          <entry key="txt" value="271" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
@@ -143,7 +142,7 @@
         <counts>
           <entry key="JAVA" value="3010" />
           <entry key="Markdown" value="179" />
-          <entry key="PLAIN_TEXT" value="257" />
+          <entry key="PLAIN_TEXT" value="271" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -167,8 +166,8 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="267">
-                <caret line="97" selection-start-line="97" selection-end-line="97" />
+              <first_editor relative-caret-position="170">
+                <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -216,8 +215,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+            <state relative-caret-position="377">
+              <caret line="68" column="66" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -647,7 +646,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549112024949" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549112862254" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -827,7 +826,7 @@
       <workItem from="1548887729395" duration="2169000" />
       <workItem from="1548935822197" duration="12832000" />
       <workItem from="1549020383271" duration="8579000" />
-      <workItem from="1549105112072" duration="5661000" />
+      <workItem from="1549105112072" duration="6228000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1547388862814</created>
@@ -1151,7 +1150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549109927673</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="readme update">
+      <created>1549112310256</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1549112310256</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1187,7 +1193,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230803000" />
+    <option name="totallyTimeSpent" value="231370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1200,6 +1206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17706667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1283,7 +1290,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/parking_meter_rest_api" />
     </ignored-roots>
-    <MESSAGE value="charge calculator tests" />
     <MESSAGE value="controllers test, almost all done" />
     <MESSAGE value="controllers test, all done" />
     <MESSAGE value="scope of test plugin -&gt; all" />
@@ -1308,7 +1314,8 @@
     <MESSAGE value="minor changes, closing next issues" />
     <MESSAGE value="http verbs applied" />
     <MESSAGE value="change from many-to-one to one-to-one" />
-    <option name="LAST_COMMIT_MESSAGE" value="change from many-to-one to one-to-one" />
+    <MESSAGE value="readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/ParkingOwnerController.java" />
@@ -1540,26 +1547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/controllers/TicketController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1582,11 +1569,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/services/TicketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="68" column="66" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wojtek/parkingmeter/helpers/ChargeCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="267">
-            <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <first_editor relative-caret-position="170">
+            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           </first_editor>
           <second_editor />
         </state>

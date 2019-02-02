@@ -12,13 +12,6 @@ Aim of this project is to build a service for managing the city parking spaces.
 * Spring boot devtools
 * Spring boot starter test
 
-### Setup
-
-```
-chmod +x ./start.sh
-./start.sh
-```
-
 ### Action table
 
 | Method     | URI                               | Action                                                							    |  Input format | Return format | 
