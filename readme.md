@@ -23,30 +23,39 @@ chmod +x ./start.sh
 
 | Method     | URI                               | Action                                                							    |  Input format | Return format | 
 |------------|-----------------------------------|-------------------------------------------------------------------------|------------------|-------------------|
-| `GET` | `/start/{ticket_type}/{nr_plate}`  |  Starts parking meter with given ticket_type and nr_plate| ticket_type: String "regular"/"disabled", nr_plate: 5 char String	|Ticket           |
-| `GET`     | `/stop/{id}`                           |  Stops parking  meter/ stops ticket with  given id    		|	id: Long 			|String			|
-| `GET`      | `/check_charge/{id}`              |  Checks charge for exact ticket with given id       			|	id: Long				|String			|
-| `GET` 	|  ` /sum`								   |  Returns sum of all tickets charges									|	- 						|SumJSON		|
-| `GET`     | `/hasStarted/{nr_plate}` 		   |  Checks if car with given nr_plate started parking meter 	|	nr_plate: 5 char String |HasStartedJSON |
+| `POST` | `/tickets`  |  Starts parking meter with given ticket_type and nr_plate|  JSON: carNumberPlate : 5 char String, ticketType: String "regular"/"disabled"	|TicketDTO           |
+| `PUT`     | `/tickets/{id}`                           |  Stops parking  meter/ stops ticket with  given id    		|	id: Long 			|String			|
+| `GET`      | `/tickets/{id}/charge`              |  Checks charge for exact ticket with given id       			|	id: Long				|BigDecimal			|
+| `GET` 	|  ` /tickets/sum`								   |  Returns sum of all tickets charges									|	- 						|BigDecimal		|
+| `GET`     | `/cars/{nrPlate}/hasStarted` 		   |  Checks if car with given nr_plate started parking meter 	|	nrPlate: 5 char String |boolean |
 
 
-## Return format
 ### Start ticket
 #### Ticket
 
-Values here are:
+Example input values:
+
+```
+{
+"carNumberPlate" : "WN999",
+"ticketType" : "REGULAR"
+}
+```
+
+
+Output values here are:
 
 * ticketType can be REGULAR or DISABLED only
-* charge is calculated according to charge table
 * stampStart is start time
+* carNumberPlate
 * id  - duh
 
 ```
 {
     "ticketType": "REGULAR",
-    "charge": 0,
-    "stampStart": "2019-01-20T18:02:39.568",
-    "id": 9
+    "stampStart": "2019-02-02T13:03:23.738",
+    "id": 9,
+    "carNumberPlate": "WN999"
 }
 ```
 
@@ -62,9 +71,9 @@ Null ticket:
 ```
 {
     "ticketType": null,
-    "charge": 0,
     "stampStart": null,
-    "id": null
+    "id": null,
+    "carNumberPlate": null
 }
 ```
 
@@ -84,40 +93,8 @@ Null ticket:
 
 | Case                           | Value returned                   | HTTP status |
 |----------------------------- |----------------------------------|-----------------|
-|Ticket doesnot exist  	| TICKET DOES NOT EXIST | 400					  |
-|Fine, ticket does exist       | Double value as String    | 200					|
-
-### Check sum
-#### SumJSON
-
-```
-{
-    "sum": 34.18
-}
-```
-In case there is no value field "sum" has null value. Always HTTP 200 status.
-
-
-### Check if has started
-#### HasStartedJSON
-
-Values here can be:
-* YES if the car with given nr_plate has started the ticket.
-* NO  if the car with given nr_plate has not started the ticket OR there is no such car.
-* INVALID_NR_PLATE if nr_plate is invalid.
-
-```
-{
-    "hasStarted": "NO"
-}
-```
-
-| Case                           | Value returned                   | HTTP status |
-|----------------------------- |----------------------------------|-----------------|
-|Invalid number	| HasStartedJSON.INVALID_NR_PLATE| 400	     |
-|Fine, ticket has started      | HasStartedJSON.YES   | 200					 |
-|Fine, ticket has not started      | HasStartedJSON.NO   | 200					 |
-
+|Ticket does not exist  	| -1 | 400					  |
+|Fine, ticket does exist       | BigDecimal    | 200					|
 
 
 ### Charge table
