@@ -9,6 +9,8 @@ import com.wojtek.parkingmeter.model.TicketEntity;
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
 import com.wojtek.parkingmeter.repositories.CarRepository;
 import com.wojtek.parkingmeter.repositories.TicketRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -22,11 +24,14 @@ public class TicketServiceImpl implements TicketService {
     private final TicketRepository ticketRepository;
     private final CarRepository carRepository;
     private final TicketMapper ticketMapper;
+    private final Logger logger;
 
     public TicketServiceImpl(TicketRepository ticketRepository, CarRepository carRepository, TicketMapper ticketMapper) {
         this.ticketRepository = ticketRepository;
         this.carRepository = carRepository;
         this.ticketMapper = ticketMapper;
+        logger = LoggerFactory.getLogger(TicketServiceImpl.class);
+
     }
 
     @Override
@@ -36,7 +41,7 @@ public class TicketServiceImpl implements TicketService {
         CarEntity carEntity = new CarEntity(numberPlate);
         carEntity.addTicket(newTicketEntity);
         carRepository.save(carEntity);
-
+        newTicketEntity.setCarEntity(carEntity);
         ticketRepository.save(newTicketEntity);
 
         return ticketMapper.ticketToTicketDTO(newTicketEntity);
@@ -60,7 +65,10 @@ public class TicketServiceImpl implements TicketService {
 
         if (stopTicketEntity.getCarEntity() != null) {
             Long carID = stopTicketEntity.getCarEntity().getId();
-            carRepository.deleteById(carID);
+            //carRepository.deleteById(carID); // usuwanie przez ID też nie działa
+            carRepository.delete(stopTicketEntity.getCarEntity());
+
+            logger.info("CarID: " + carID);
             stopTicketEntity.setCarEntity(null);
         }
 

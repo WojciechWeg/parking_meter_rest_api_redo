@@ -24,17 +24,11 @@ public class CarEntity {
     @Column(name = "nr_plate")
     private String nrPlate;
 
-    @OneToMany(mappedBy = "carEntity", cascade = {CascadeType.ALL})
-    @JsonIgnoreProperties(value = {"carEntity"})
-    private List<TicketEntity> ticketEntities;
+    @OneToOne(mappedBy = "carEntity", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    private TicketEntity ticket;
 
-    public void addTicket(TicketEntity ticketEntity) {
-        if (ticketEntities == null)
-            ticketEntities = new ArrayList<>();
-
-        this.ticketEntities.add(ticketEntity);
-
-        ticketEntity.setCarEntity(this);
+    public void addTicket(TicketEntity ticket) {
+        this.ticket = ticket;
     }
 
     public Long getId() {
@@ -53,11 +47,11 @@ public class CarEntity {
         this.nrPlate = nrPlate;
     }
 
-    public List<TicketEntity> getTicketEntities() {
-        return ticketEntities;
+    public TicketEntity getTicket() {
+        return ticket;
     }
 
-    public void setTicketEntities(List<TicketEntity> ticketEntities) {
-        this.ticketEntities = ticketEntities;
+    public void setTicket(TicketEntity ticket) {
+        this.ticket = ticket;
     }
 }

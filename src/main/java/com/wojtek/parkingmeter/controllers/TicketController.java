@@ -36,7 +36,12 @@ public class TicketController {
     @PutMapping("/tickets/{id}")
     public ResponseEntity<String> stopTicket(@PathVariable String id) {
 
-        return ResponseEntity.ok().body(validator.validateStopTicket(id));
+        if(validator.checkIfExists(id)) {
+            ticketService.stopTicket(Long.parseLong(id));
+            return ResponseEntity.ok().body(validator.validateStopTicket(id));
+        }
+        else
+            return ResponseEntity.ok().body(validator.validateStopTicket(id));
 
     }
 

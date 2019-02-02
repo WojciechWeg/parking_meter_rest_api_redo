@@ -41,9 +41,8 @@ public class TicketEntity {
     @Column(name="car_number_plate")
     private String carNumberPlate;
 
-    @ManyToOne(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "car_id")
-    @JsonIgnoreProperties
+    @OneToOne(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "cars_id")
     private CarEntity carEntity;
 
     public Long getId() {

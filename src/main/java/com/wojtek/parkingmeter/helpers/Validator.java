@@ -59,7 +59,7 @@ public class Validator {
             if (!checkIfExists(idString))
                 return "TICKET DOES NOT EXIST";
 
-                ticketService.stopTicket(id);
+
                 return "TICKET STOPPED";
         } catch (NoSuchElementException e) {
             return "TICKET DOES NOT EXIST";
