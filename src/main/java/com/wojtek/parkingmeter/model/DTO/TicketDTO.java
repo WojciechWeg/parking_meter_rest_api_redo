@@ -9,19 +9,13 @@ public class TicketDTO {
     public TicketDTO() {
     }
 
-    public TicketDTO(TicketType ticketType, double charge, LocalDateTime stampStart) {
-        this.ticketType = ticketType;
-        this.charge = charge;
-        this.stampStart = stampStart;
-    }
-
     private TicketType ticketType;
-
-    private double charge;
 
     private LocalDateTime stampStart;
 
     private Long id;
+
+    private String carNumberPlate;
 
     public TicketType getTicketType() {
         return ticketType;
@@ -29,14 +23,6 @@ public class TicketDTO {
 
     public void setTicketType(TicketType ticketType) {
         this.ticketType = ticketType;
-    }
-
-    public double getCharge() {
-        return charge;
-    }
-
-    public void setCharge(double charge) {
-        this.charge = charge;
     }
 
     public LocalDateTime getStampStart() {
@@ -53,5 +39,13 @@ public class TicketDTO {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getCarNumberPlate() {
+        return carNumberPlate;
+    }
+
+    public void setCarNumberPlate(String carNumerPlate) {
+        this.carNumberPlate = carNumerPlate;
     }
 }

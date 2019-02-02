@@ -51,3 +51,13 @@ n
 	readme.md,2\7\275d783e298228506068436512433d343feb52aa
 w
 G.idea/sonarlint/issuestore/0/2/02f1ae743114c33d74033b21b4ee4c864adc0e6e,8\6\86d95b032e2afe6a72c0d7f9f7ba1898984fb82f
+>
+.gitattributes,2\4\24139dae656713ba861751fb2c2ac38839349a7a
+n
+>src/main/java/com/wojtek/parkingmeter/services/CarService.java,8\1\813fe7d3b4fc3023fa907593eb0ee2abd2d14c29
+r
+Bsrc/main/java/com/wojtek/parkingmeter/services/CarServiceImpl.java,6\1\61a878c1e86a1168e1c2c736146d2eb62180df5f
+u
+Esrc/main/java/com/wojtek/parkingmeter/model/DTO/TicketStarterDTO.java,c\8\c8c06633a2a89fe0289b9c025bb885e72983d015
+t
+Dsrc/main/java/com/wojtek/parkingmeter/controllers/CarController.java,3\a\3a68ad15a0d0ebbaa808372a880edffd1054c686

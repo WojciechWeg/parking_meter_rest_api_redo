@@ -2,6 +2,7 @@ package com.wojtek.parkingmeter.controllers;
 
 import com.wojtek.parkingmeter.helpers.*;
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
+import com.wojtek.parkingmeter.model.DTO.TicketStarterDTO;
 import com.wojtek.parkingmeter.services.TicketService;
 
 import org.springframework.http.ResponseEntity;
@@ -22,24 +23,24 @@ public class TicketController {
         this.validator = validator;
     }
 
-    @GetMapping("/start/{ticketType}/{numberPlate}")
-    public ResponseEntity<TicketDTO> startTicket(@PathVariable String ticketType, @PathVariable String numberPlate) {
+    @PostMapping("/tickets")
+    public ResponseEntity<TicketDTO> startTicket(@RequestBody TicketStarterDTO ticketStarterDTO) {
 
-        if (validator.validateNewTicket(ticketType, numberPlate))
-            return ResponseEntity.ok().body(ticketService.startTicket(ticketType, numberPlate));
+        if (validator.validateNewTicket(ticketStarterDTO.getTicketType().toString(), ticketStarterDTO.getCarNumberPlate()))
+            return ResponseEntity.ok().body(ticketService.startTicket(ticketStarterDTO.getTicketType().toString(), ticketStarterDTO.getCarNumberPlate()));
         else
             return ResponseEntity.badRequest().body(new TicketDTO());
 
     }
 
-    @GetMapping("/stop/{id}")
+    @PutMapping("/tickets/{id}")
     public ResponseEntity<String> stopTicket(@PathVariable String id) {
 
         return ResponseEntity.ok().body(validator.validateStopTicket(id));
 
     }
 
-    @GetMapping("/check_charge/{id}")
+    @GetMapping("/tickets/{id}/charge")
     public ResponseEntity<BigDecimal> checkCharge(@PathVariable String id) {
 
         if(validator.checkIfExists(id))
@@ -49,17 +50,10 @@ public class TicketController {
 
     }
 
-    @GetMapping("/sum")
+    @GetMapping("tickets/sum")
     public ResponseEntity<BigDecimal> checkSum() {
         return ResponseEntity.ok(ticketService.checkSum());
     }
 
-    @GetMapping("/hasStarted/{numberPlate}")
-    public ResponseEntity<Boolean> hasStarted(@PathVariable String numberPlate) {
 
-        if(validator.checkNumberPlate(numberPlate))
-            return ResponseEntity.ok(ticketService.hasStarted(numberPlate));
-
-        return ResponseEntity.ok(false);
-    }
 }

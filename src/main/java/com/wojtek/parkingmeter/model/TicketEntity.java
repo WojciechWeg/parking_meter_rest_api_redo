@@ -15,10 +15,11 @@ public class TicketEntity {
     public TicketEntity() {
     }
 
-    public TicketEntity(TicketType ticketType, LocalDateTime stampStart, LocalDateTime stampStop) {
+    public TicketEntity(TicketType ticketType, LocalDateTime stampStart, LocalDateTime stampStop, String carNumberPlate) {
         this.ticketType = ticketType;
         this.stampStart = stampStart;
         this.stampStop = stampStop;
+        this.carNumberPlate = carNumberPlate;
     }
 
     @Id
@@ -36,6 +37,9 @@ public class TicketEntity {
 
     @Column(name = "stamp_stop")
     private LocalDateTime stampStop;
+
+    @Column(name="car_number_plate")
+    private String carNumberPlate;
 
     @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "car_id")
@@ -96,5 +100,13 @@ public class TicketEntity {
 
     public Duration getDuration() {
         return Duration.between(stampStart, stampStop);
+    }
+
+    public String getCarNumberPlate() {
+        return carNumberPlate;
+    }
+
+    public void setCarNumberPlate(String carNumberPlate) {
+        this.carNumberPlate = carNumberPlate;
     }
 }

@@ -39,52 +39,52 @@ public class Bootstrap implements CommandLineRunner {
     }
 
     private void loadTickets() {
-        TicketEntity ticketEntity1 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 19, 30, 00, 00));
+        TicketEntity ticketEntity1 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 19, 30, 00, 00), "WT321");
 
         ticketEntity1.setCharge(ChargeCalculator.charge(ticketEntity1.getTicketType(), ticketEntity1.getDuration()));
 
         ticketRepository.save(ticketEntity1);
 
-        TicketEntity ticketEntity2 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 20, 01, 00, 00));
+        TicketEntity ticketEntity2 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 20, 01, 00, 00),"43EWS");
 
         ticketEntity2.setCharge(ChargeCalculator.charge(ticketEntity2.getTicketType(), ticketEntity2.getDuration()));
 
         ticketRepository.save(ticketEntity2);
 
 
-        TicketEntity ticketEntity3 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 21, 01, 00, 00));
+        TicketEntity ticketEntity3 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 21, 01, 00, 00),"LO456");
 
         ticketEntity3.setCharge(ChargeCalculator.charge(ticketEntity3.getTicketType(), ticketEntity3.getDuration()));
 
         ticketRepository.save(ticketEntity3);
 
-        TicketEntity ticketEntity4 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 22, 01, 00, 00));
+        TicketEntity ticketEntity4 = new TicketEntity(TicketType.REGULAR, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 22, 01, 00, 00),"PO990");
 
         ticketEntity4.setCharge(ChargeCalculator.charge(ticketEntity4.getTicketType(), ticketEntity4.getDuration()));
 
         ticketRepository.save(ticketEntity4);
 
 
-        TicketEntity ticketEntity5 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 19, 30, 00, 00));
+        TicketEntity ticketEntity5 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 19, 30, 00, 00),"ER109");
 
         ticketEntity5.setCharge(ChargeCalculator.charge(ticketEntity5.getTicketType(), ticketEntity5.getDuration()));
 
         ticketRepository.save(ticketEntity5);
 
-        TicketEntity ticketEntity6 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 20, 01, 00, 00));
+        TicketEntity ticketEntity6 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 20, 01, 00, 00),"NO890");
 
         ticketEntity6.setCharge(ChargeCalculator.charge(ticketEntity6.getTicketType(), ticketEntity6.getDuration()));
 
         ticketRepository.save(ticketEntity6);
 
 
-        TicketEntity ticketEntity7 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 21, 01, 00, 00));
+        TicketEntity ticketEntity7 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 21, 01, 00, 00),"BT345");
 
         ticketEntity7.setCharge(ChargeCalculator.charge(ticketEntity7.getTicketType(), ticketEntity7.getDuration()));
 
         ticketRepository.save(ticketEntity7);
 
-        TicketEntity ticketEntity8 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 22, 01, 00, 00));
+        TicketEntity ticketEntity8 = new TicketEntity(TicketType.DISABLED, LocalDateTime.of(2019, 1, 13, 19, 00, 00, 00), LocalDateTime.of(2019, 1, 13, 22, 01, 00, 00),"ER000");
 
         ticketEntity8.setCharge(ChargeCalculator.charge(ticketEntity8.getTicketType(), ticketEntity8.getDuration()));
 

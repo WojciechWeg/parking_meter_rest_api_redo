@@ -12,7 +12,7 @@ public class ChargeCalculator {
         if (TicketType.REGULAR == ticketType)
             return countRegularTicketType(Math.abs(duration.toHours()));
 
-        if (TicketType.DISABLED.equals(ticketType))
+        if (TicketType.DISABLED == ticketType)
             return countDisabledTicketType(Math.abs(duration.toHours()));
 
         return BigDecimal.valueOf(-1.0);

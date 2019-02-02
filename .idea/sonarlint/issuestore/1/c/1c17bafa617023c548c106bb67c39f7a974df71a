@@ -1,6 +1,0 @@
-
-Zsquid:S36553"<Call "stopTicketOpt.isPresent()" before accessing the value.(¢ú…™8û‘’Ê‰-
-[squid:S2589i"8Remove this expression which always evaluates to "false"(Ì¼Çµıÿÿÿÿ8°Şµ‡Š-
-psquid:S00117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªâ¿ª8«Ê ‡Š-
-dsquid:S1126i"AReplace this if-then-else statement by a single return statement.(Ì¼Çµıÿÿÿÿ8Ÿ¥¶‡Š-
-[squid:S3655L"=Call "ticketOptional.isPresent()" before accessing the value.(éŸùš8û‘’Ê‰-

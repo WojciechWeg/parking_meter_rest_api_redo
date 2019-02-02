@@ -16,6 +16,4 @@ public interface TicketService {
 
     BigDecimal checkSum();
 
-    boolean hasStarted(String numberPlate);
-
 }

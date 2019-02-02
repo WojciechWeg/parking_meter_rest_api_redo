@@ -21,9 +21,7 @@ public class TicketServiceImpl implements TicketService {
 
     private final TicketRepository ticketRepository;
     private final CarRepository carRepository;
-
     private final TicketMapper ticketMapper;
-
 
     public TicketServiceImpl(TicketRepository ticketRepository, CarRepository carRepository, TicketMapper ticketMapper) {
         this.ticketRepository = ticketRepository;
@@ -34,7 +32,7 @@ public class TicketServiceImpl implements TicketService {
     @Override
     public TicketDTO startTicket(String ticketType, String numberPlate) {
 
-        TicketEntity newTicketEntity = new TicketEntity(TicketType.valueOf(ticketType.toUpperCase()), LocalDateTime.now(), LocalDateTime.of(0, 1, 1, 0, 0, 0, 0));
+        TicketEntity newTicketEntity = new TicketEntity(TicketType.valueOf(ticketType.toUpperCase()), LocalDateTime.now(), LocalDateTime.of(0, 1, 1, 0, 0, 0, 0), numberPlate);
         CarEntity carEntity = new CarEntity(numberPlate);
         carEntity.addTicket(newTicketEntity);
         carRepository.save(carEntity);
@@ -99,12 +97,5 @@ public class TicketServiceImpl implements TicketService {
 
     }
 
-    @Override
-    public boolean hasStarted(String numberPlate) {
 
-        Integer carID = carRepository.findIdByNrPlate(numberPlate);
-
-        return  (carID != null);
-
-    }
 }

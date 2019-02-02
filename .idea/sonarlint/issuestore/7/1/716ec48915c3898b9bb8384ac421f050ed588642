@@ -1,4 +1,7 @@
 
-†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ï¼ØÑúÿÿÿÿ8±ôâßˆ-
-†squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-
-Rsquid:S1066"/Merge this if statement with the enclosing one.(¾ Ù¿ÿÿÿÿÿ8ÿë‹Ê‰-
+Ssquid:S1191
+"5Use classes from the Java API instead of Sun classes.(ÄÂÉƒ8•«µÖŠ-
+dsquid:S1126U"AReplace this if-then-else statement by a single return statement.(Íë©¥şÿÿÿÿ8ÚÊ¿ÖŠ-
+Tsquid:S1068"1Remove this unused "carRepository" private field.(ºƒ”áøÿÿÿÿ8½·£ÖŠ-
+isquid:UselessImportCheck
+">Remove this unused import 'sun.security.krb5.internal.Ticket'.(ÄÂÉƒ8“÷·ÖŠ-
