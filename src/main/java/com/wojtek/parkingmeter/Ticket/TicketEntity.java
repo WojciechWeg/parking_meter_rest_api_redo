@@ -1,7 +1,6 @@
-package com.wojtek.parkingmeter.model;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+package com.wojtek.parkingmeter.Ticket;
+import com.wojtek.parkingmeter.Car.CarEntity;
 import com.wojtek.parkingmeter.helpers.ChargeCalculator;
-import com.wojtek.parkingmeter.helpers.enums.TicketType;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -1,11 +1,11 @@
 package com.wojtek.parkingmeter.bootstrap;
 
 import com.wojtek.parkingmeter.helpers.ChargeCalculator;
-import com.wojtek.parkingmeter.helpers.enums.TicketType;
-import com.wojtek.parkingmeter.model.CarEntity;
-import com.wojtek.parkingmeter.model.TicketEntity;
-import com.wojtek.parkingmeter.repositories.CarRepository;
-import com.wojtek.parkingmeter.repositories.TicketRepository;
+import com.wojtek.parkingmeter.Ticket.TicketType;
+import com.wojtek.parkingmeter.Car.CarEntity;
+import com.wojtek.parkingmeter.Ticket.TicketEntity;
+import com.wojtek.parkingmeter.Car.CarRepository;
+import com.wojtek.parkingmeter.Ticket.TicketRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 ///

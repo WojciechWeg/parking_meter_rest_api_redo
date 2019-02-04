@@ -1,7 +1,5 @@
-package com.wojtek.parkingmeter.mapper;
+package com.wojtek.parkingmeter.Ticket;
 
-import com.wojtek.parkingmeter.model.TicketEntity;
-import com.wojtek.parkingmeter.model.DTO.TicketDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

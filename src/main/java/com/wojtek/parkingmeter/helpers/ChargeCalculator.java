@@ -1,6 +1,6 @@
 package com.wojtek.parkingmeter.helpers;
 
-import com.wojtek.parkingmeter.helpers.enums.TicketType;
+import com.wojtek.parkingmeter.Ticket.TicketType;
 
 import java.math.BigDecimal;
 import java.time.Duration;

@@ -1,9 +1,8 @@
-package com.wojtek.parkingmeter.model;
+package com.wojtek.parkingmeter.Car;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.wojtek.parkingmeter.Ticket.TicketEntity;
+
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "cars")

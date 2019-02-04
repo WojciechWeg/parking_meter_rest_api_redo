@@ -1,14 +1,9 @@
-package com.wojtek.parkingmeter.services;
+package com.wojtek.parkingmeter.Ticket;
 
 import com.wojtek.parkingmeter.helpers.*;
-import com.wojtek.parkingmeter.helpers.enums.TicketType;
-import com.wojtek.parkingmeter.mapper.TicketMapper;
-import com.wojtek.parkingmeter.model.CarEntity;
-import com.wojtek.parkingmeter.model.TicketEntity;
+import com.wojtek.parkingmeter.Car.CarEntity;
 
-import com.wojtek.parkingmeter.model.DTO.TicketDTO;
-import com.wojtek.parkingmeter.repositories.CarRepository;
-import com.wojtek.parkingmeter.repositories.TicketRepository;
+import com.wojtek.parkingmeter.Car.CarRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,4 @@
-package com.wojtek.parkingmeter.model.DTO;
-
-import com.wojtek.parkingmeter.helpers.enums.TicketType;
+package com.wojtek.parkingmeter.Ticket;
 
 import java.time.LocalDateTime;
 

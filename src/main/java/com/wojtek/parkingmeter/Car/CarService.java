@@ -1,6 +1,5 @@
-package com.wojtek.parkingmeter.services;
+package com.wojtek.parkingmeter.Car;
 
-import com.wojtek.parkingmeter.repositories.CarRepository;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,6 +1,5 @@
-package com.wojtek.parkingmeter.repositories;
+package com.wojtek.parkingmeter.Ticket;
 
-import com.wojtek.parkingmeter.model.TicketEntity;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

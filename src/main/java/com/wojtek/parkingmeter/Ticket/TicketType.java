@@ -1,4 +1,4 @@
-package com.wojtek.parkingmeter.helpers.enums;
+package com.wojtek.parkingmeter.Ticket;
 
 public enum TicketType {
     REGULAR,

@@ -1,6 +1,6 @@
-package com.wojtek.parkingmeter.repositories;
+package com.wojtek.parkingmeter.Car;
 
-import com.wojtek.parkingmeter.model.CarEntity;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
