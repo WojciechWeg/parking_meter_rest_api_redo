@@ -4,10 +4,7 @@ import com.wojtek.parkingmeter.helpers.enums.TicketType;
 import com.wojtek.parkingmeter.model.TicketEntity;
 import com.wojtek.parkingmeter.repositories.CarRepository;
 import com.wojtek.parkingmeter.repositories.TicketRepository;
-import com.wojtek.parkingmeter.services.CarService;
-import com.wojtek.parkingmeter.services.TicketService;
 import org.springframework.stereotype.Component;
-import sun.security.krb5.internal.Ticket;
 
 import java.time.LocalDateTime;
 import java.util.NoSuchElementException;

@@ -3,8 +3,8 @@ package com.wojtek.parkingmeter.controllers;
 import com.wojtek.parkingmeter.helpers.*;
 import com.wojtek.parkingmeter.model.DTO.TicketDTO;
 import com.wojtek.parkingmeter.model.DTO.TicketStarterDTO;
-import com.wojtek.parkingmeter.services.TicketService;
 
+import com.wojtek.parkingmeter.services.TicketService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
