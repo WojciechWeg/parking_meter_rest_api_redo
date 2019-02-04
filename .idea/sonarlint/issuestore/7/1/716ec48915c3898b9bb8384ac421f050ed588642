@@ -1,7 +1,8 @@
 
+dsquid:S1126U"AReplace this if-then-else statement by a single return statement.(Íë©¥şÿÿÿÿ8ÚÊ¿ÖŠ-
+Tsquid:S1068"1Remove this unused "ticketService" private field.(î«€¥ùÿÿÿÿ8æ›×ğŠ-
+Tsquid:S1068"1Remove this unused "carRepository" private field.(ºƒ”áøÿÿÿÿ8½·£ÖŠ-
 Ssquid:S1191
 "5Use classes from the Java API instead of Sun classes.(ÄÂÉƒ8•«µÖŠ-
-dsquid:S1126U"AReplace this if-then-else statement by a single return statement.(Íë©¥şÿÿÿÿ8ÚÊ¿ÖŠ-
-Tsquid:S1068"1Remove this unused "carRepository" private field.(ºƒ”áøÿÿÿÿ8½·£ÖŠ-
 isquid:UselessImportCheck
 ">Remove this unused import 'sun.security.krb5.internal.Ticket'.(ÄÂÉƒ8“÷·ÖŠ-

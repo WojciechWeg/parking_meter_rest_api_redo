@@ -2,7 +2,6 @@ package com.wojtek.parkingmeter.controllers;
 
 import com.wojtek.parkingmeter.helpers.Validator;
 import com.wojtek.parkingmeter.services.CarService;
-import com.wojtek.parkingmeter.services.TicketService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
