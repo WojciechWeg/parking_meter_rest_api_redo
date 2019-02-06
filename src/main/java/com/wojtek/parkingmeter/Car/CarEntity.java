@@ -23,7 +23,7 @@ public class CarEntity {
     @Column(name = "nr_plate")
     private String nrPlate;
 
-    @OneToOne(mappedBy = "carEntity", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @OneToOne(mappedBy = "carEntity", cascade = {CascadeType.ALL})
     private TicketEntity ticket;
 
     public void addTicket(TicketEntity ticket) {

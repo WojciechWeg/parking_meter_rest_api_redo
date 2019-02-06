@@ -12,4 +12,6 @@ public interface TicketMapper {
 
     TicketEntity ticketDTOToTocket(TicketDTO ticketDTO);
 
+    TicketStopDTO ticketEntityToTicketPutDTO(TicketEntity ticketEntity);
+
 }

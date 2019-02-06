@@ -4,6 +4,7 @@ import com.wojtek.parkingmeter.Ticket.TicketType;
 import com.wojtek.parkingmeter.Ticket.TicketEntity;
 import com.wojtek.parkingmeter.Ticket.TicketRepository;
 import com.wojtek.parkingmeter.Car.CarService;
+import com.wojtek.parkingmeter.exceptions.*;
 import org.springframework.stereotype.Component;
 
 
@@ -22,48 +23,38 @@ public class Validator {
         this.carService = carService;
     }
 
-    public  boolean validateNewTicket(String ticketType, String numberPlate) {
+    public void validateNewTicket(String ticketType, String numberPlate) {
 
         if (carService.hasStarted(numberPlate))
-            return false;
+            throw new CarAlreadyStartedException();
 
-       return isTicketInputDataOK(ticketType,numberPlate);
+        isTicketInputDataOK(ticketType,numberPlate);
 
     }
 
-    private boolean isTicketInputDataOK(String ticketType, String numberPlate){
-        return ( numberPlate.length() == 5 ) && TicketType.DISABLED.toString().equalsIgnoreCase(ticketType) ||
-                TicketType.REGULAR.toString().equalsIgnoreCase(ticketType);
+    private void isTicketInputDataOK(String ticketType, String numberPlate){
+        if (!(( numberPlate.length() == 5 ) && TicketType.DISABLED.toString().equalsIgnoreCase(ticketType) ||
+                TicketType.REGULAR.toString().equalsIgnoreCase(ticketType)))
+            throw new TicketIncorrectInputDataException();
     }
 
-    public String validateStopTicket(String idString){
+
+    public void isIdLong(String idString){
 
         try {
             Long.parseLong(idString);
         }
         catch (NumberFormatException e){
-            return "INVALID ID";
+            throw new InvalidIDNumberException("Invalid ID Number Exception  id : " + idString);
         }
 
-        Long id = Long.parseLong(idString);
-        try {
-            if (hasStopped(id))
-                return "TICKET ALREADY STOPPED";
-            if (!checkIfExists(idString))
-                return "TICKET DOES NOT EXIST";
-
-
-                return "TICKET STOPPED";
-        } catch (NoSuchElementException e) {
-            return "TICKET DOES NOT EXIST";
-        }
     }
 
     public boolean checkNumberPlate(String numberPlate){
         return (numberPlate.length() == 5);
     }
 
-    public  boolean hasStopped(Long id) {
+    public boolean hasStopped(Long id) {
 
         Optional<TicketEntity> stopTicketOpt = ticketRepository.findById(id);
 
@@ -74,15 +65,18 @@ public class Validator {
         else
             throw new NoSuchElementException();
 
-
-        if(stopTicketEntity.getStampStop().equals(LocalDateTime.of(0, 1, 1, 0, 0, 0, 0)))
+        try {
+            LocalDateTime stopStamp = stopTicketEntity.getStampStop();
+            System.out.println(stopStamp);
+        }catch (NullPointerException e){
             return false;
-        else
+        }
+
             return true;
 
     }
 
-    public  boolean checkIfExists(String idString) {
+    private boolean checkIfExists(String idString) {
 
         try {
             Long.parseLong(idString);

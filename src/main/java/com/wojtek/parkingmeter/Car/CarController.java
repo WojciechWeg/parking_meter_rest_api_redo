@@ -1,7 +1,6 @@
 package com.wojtek.parkingmeter.Car;
 
-import com.wojtek.parkingmeter.helpers.Validator;
-import org.springframework.http.ResponseEntity;
+import com.wojtek.parkingmeter.helpers.LaunchStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,19 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class CarController {
 
     private final CarService carService;
-    private final Validator validator;
 
-    public CarController(CarService carService, Validator validator) {
+    public CarController(CarService carService) {
         this.carService = carService;
-        this.validator = validator;
     }
 
-    @GetMapping("/cars/{numberPlate}/hasStarted")
-    public ResponseEntity<Boolean> hasStarted(@PathVariable String numberPlate) {
-
-        if(validator.checkNumberPlate(numberPlate))
-            return ResponseEntity.ok(carService.hasStarted(numberPlate));
-
-        return ResponseEntity.ok(false);
+    @GetMapping("/cars/{numberPlate}/launch-status")
+    public LaunchStatus getLaunchStatus(@PathVariable String numberPlate) {
+        return new LaunchStatus(carService.hasStarted(numberPlate));
     }
+
 }

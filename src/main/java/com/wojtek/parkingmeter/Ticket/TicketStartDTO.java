@@ -1,6 +1,6 @@
 package com.wojtek.parkingmeter.Ticket;
 
-public class TicketStarterDTO {
+public class TicketStartDTO {
 
 
     private String carNumberPlate;

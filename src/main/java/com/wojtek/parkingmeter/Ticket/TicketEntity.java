@@ -1,6 +1,5 @@
 package com.wojtek.parkingmeter.Ticket;
 import com.wojtek.parkingmeter.Car.CarEntity;
-import com.wojtek.parkingmeter.helpers.ChargeCalculator;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -18,6 +17,12 @@ public class TicketEntity {
         this.ticketType = ticketType;
         this.stampStart = stampStart;
         this.stampStop = stampStop;
+        this.carNumberPlate = carNumberPlate;
+    }
+
+    public TicketEntity(TicketType ticketType, LocalDateTime stampStart, String carNumberPlate) {
+        this.ticketType = ticketType;
+        this.stampStart = stampStart;
         this.carNumberPlate = carNumberPlate;
     }
 
@@ -92,14 +97,6 @@ public class TicketEntity {
         this.carEntity = carEntity;
     }
 
-    public void countCharge() {
-        setCharge(ChargeCalculator.charge(getTicketType(), getDuration()));
-    }
-
-    public Duration getDuration() {
-        return Duration.between(stampStart, stampStop);
-    }
-
     public String getCarNumberPlate() {
         return carNumberPlate;
     }
@@ -107,4 +104,9 @@ public class TicketEntity {
     public void setCarNumberPlate(String carNumberPlate) {
         this.carNumberPlate = carNumberPlate;
     }
+
+    public Duration getDuration() {
+        return Duration.between(stampStart, stampStop);
+    }
+
 }
