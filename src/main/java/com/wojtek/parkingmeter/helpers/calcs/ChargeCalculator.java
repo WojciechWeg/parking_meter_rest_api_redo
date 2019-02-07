@@ -18,9 +18,9 @@ public class ChargeCalculator {
     }
 
     public BigDecimal charge(TicketType ticketType, Duration duration) {
-        System.out.print("\t" + calcs +"\n");
+
         return Optional.ofNullable(calcs.get(ticketType.name())).orElseThrow(IllegalArgumentException::new)
-                .calculate(Math.abs(duration.toHours()));
+                .calculate(Math.abs(duration.toHours())).setScale(2);
     }
 
 }

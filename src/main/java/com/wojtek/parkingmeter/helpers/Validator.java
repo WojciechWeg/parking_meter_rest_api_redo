@@ -1,16 +1,10 @@
 package com.wojtek.parkingmeter.helpers;
 
 import com.wojtek.parkingmeter.Car.CarRepository;
-import com.wojtek.parkingmeter.Ticket.TicketType;
-import com.wojtek.parkingmeter.Ticket.TicketEntity;
 import com.wojtek.parkingmeter.Ticket.TicketRepository;
-import com.wojtek.parkingmeter.Car.CarService;
 import com.wojtek.parkingmeter.exceptions.*;
 import org.springframework.stereotype.Component;
 
-
-import java.time.LocalDateTime;
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @Component

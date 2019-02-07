@@ -6,11 +6,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class CarService {
 
-    private final CarRepository carRepository;
     private final Validator validator;
 
-    public CarService(CarRepository carRepository, Validator validator) {
-        this.carRepository = carRepository;
+    public CarService( Validator validator) {
         this.validator = validator;
     }
 

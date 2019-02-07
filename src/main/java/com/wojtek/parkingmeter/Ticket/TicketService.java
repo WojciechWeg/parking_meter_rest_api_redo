@@ -56,15 +56,12 @@ public class TicketService {
 
         Optional<TicketEntity> stopTicketOpt = ticketRepository.findById(Long.parseLong(id));
 
-        TicketEntity stopTicketEntity;
+        stopTicketOpt.orElseThrow(() ->  new TicketDoesNotExistException("Ticket with given ID does not exist: " + id));
 
-        if(stopTicketOpt.isPresent())
-             stopTicketEntity = stopTicketOpt.get();
-        else
-            throw new TicketDoesNotExistException("Ticket with given ID does not exist: " + id);
-
+        TicketEntity stopTicketEntity = stopTicketOpt.get();
 
         stopTicketEntity.setStampStop(LocalDateTime.now());
+        logger.info("Charge for ticked id: " + id + " is " + chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration()));
         stopTicketEntity.setCharge(chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration()));
         stopTicketEntity.setCarEntity(null);
 
@@ -92,18 +89,16 @@ public class TicketService {
 
         Optional<TicketEntity> ticketOptional = ticketRepository.findById(Long.parseLong(id));
 
-        TicketEntity ticketEntity;
+        ticketOptional.orElseThrow(() -> new TicketDoesNotExistException("Ticket with given ID does not exist: " + id));
 
-        if(ticketOptional.isPresent())
-            ticketEntity = ticketOptional.get();
-        else
-            throw new TicketDoesNotExistException("Ticket with given ID does not exist: " + id);
+        TicketEntity ticketEntity = ticketOptional.get();
 
         if (ticketEntity.getCarEntity() != null)
             ticketEntity.setStampStop(LocalDateTime.now());
 
         TicketType ticketType = ticketEntity.getTicketType();
 
+        logger.info("Charge for ticked id: " + id + " is " + chargeCalculator.charge(ticketType, ticketEntity.getDuration()));
         return chargeCalculator.charge(ticketType, ticketEntity.getDuration());
 
     }
