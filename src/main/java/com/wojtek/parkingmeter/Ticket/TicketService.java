@@ -61,7 +61,7 @@ public class TicketService {
         if(stopTicketOpt.isPresent())
              stopTicketEntity = stopTicketOpt.get();
         else
-            throw new TicketDoesNotExistException(id);
+            throw new TicketDoesNotExistException("Ticket with given ID does not exist: " + id);
 
 
         stopTicketEntity.setStampStop(LocalDateTime.now());
@@ -97,7 +97,7 @@ public class TicketService {
         if(ticketOptional.isPresent())
             ticketEntity = ticketOptional.get();
         else
-            throw new TicketDoesNotExistException(id);
+            throw new TicketDoesNotExistException("Ticket with given ID does not exist: " + id);
 
         if (ticketEntity.getCarEntity() != null)
             ticketEntity.setStampStop(LocalDateTime.now());

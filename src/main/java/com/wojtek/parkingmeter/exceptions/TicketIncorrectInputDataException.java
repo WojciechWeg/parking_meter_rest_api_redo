@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 public class TicketIncorrectInputDataException extends RuntimeException {
 
-    public TicketIncorrectInputDataException() {
-        super();
+    public TicketIncorrectInputDataException(String exception) {
+        super(exception);
     }
 }

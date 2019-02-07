@@ -1,5 +1,6 @@
 package com.wojtek.parkingmeter.helpers;
 
+import com.wojtek.parkingmeter.Car.CarRepository;
 import com.wojtek.parkingmeter.Ticket.TicketType;
 import com.wojtek.parkingmeter.Ticket.TicketEntity;
 import com.wojtek.parkingmeter.Ticket.TicketRepository;
@@ -16,26 +17,26 @@ import java.util.Optional;
 public class Validator {
 
     private final TicketRepository ticketRepository;
-    private final CarService carService;
+    private final CarRepository carRepository;
 
-    public Validator(TicketRepository ticketRepository, CarService carService) {
+    public Validator(TicketRepository ticketRepository, CarRepository carRepository) {
         this.ticketRepository = ticketRepository;
-        this.carService = carService;
+        this.carRepository = carRepository;
     }
 
     public void validateNewTicket(String ticketType, String numberPlate) {
 
-        if (carService.hasStarted(numberPlate))
-            throw new CarAlreadyStartedException();
+        if (hasStarted(numberPlate))
+            throw new CarAlreadyStartedException("This car already have valid ticket.");
 
         isTicketInputDataOK(ticketType,numberPlate);
 
     }
 
     private void isTicketInputDataOK(String ticketType, String numberPlate){
-        if (!(( numberPlate.length() == 5 ) && TicketType.DISABLED.toString().equalsIgnoreCase(ticketType) ||
-                TicketType.REGULAR.toString().equalsIgnoreCase(ticketType)))
-            throw new TicketIncorrectInputDataException();
+        checkNumberPlate(numberPlate);
+
+        // w tym miejscu chciałbym zwalidować ticket type ale nie wiem jak
     }
 
 
@@ -50,43 +51,20 @@ public class Validator {
 
     }
 
-    public boolean checkNumberPlate(String numberPlate){
-        return (numberPlate.length() == 5);
+    public void checkNumberPlate(String numberPlate){
+        if (numberPlate.length() != 5)
+            throw new InvalidNumberPlateException("Invalid number plate");
     }
 
-    public boolean hasStopped(Long id) {
+    public boolean hasStarted(String numberPlate){
 
-        Optional<TicketEntity> stopTicketOpt = ticketRepository.findById(id);
 
-        TicketEntity stopTicketEntity;
+        Optional<Integer> carID = carRepository.findIdByNrPlate(numberPlate);
 
-        if(stopTicketOpt.isPresent())
-            stopTicketEntity = stopTicketOpt.get();
-        else
-            throw new NoSuchElementException();
-
-        try {
-            LocalDateTime stopStamp = stopTicketEntity.getStampStop();
-            System.out.println(stopStamp);
-        }catch (NullPointerException e){
-            return false;
-        }
-
+        if(carID.isPresent())
             return true;
-
-    }
-
-    private boolean checkIfExists(String idString) {
-
-        try {
-            Long.parseLong(idString);
-        }
-        catch (NumberFormatException e){
+        else
             return false;
-        }
 
-        Long id = Long.parseLong(idString);
-
-        return ticketRepository.existsById(id);
     }
 }

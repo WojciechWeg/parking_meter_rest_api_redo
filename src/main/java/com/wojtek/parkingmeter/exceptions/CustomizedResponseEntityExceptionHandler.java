@@ -16,47 +16,38 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 
     @ExceptionHandler(InvalidIDNumberException.class)
     public final ResponseEntity<ErrorDetails> handleInvalidIDNumber(InvalidIDNumberException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(),
-                request.getDescription(false));
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage());
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(TicketDoesNotExistException.class)
     public final ResponseEntity<ErrorDetails> handleTicketDoesNotExist(TicketDoesNotExistException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(),
-                request.getDescription(false));
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage());
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(TicketStoppedException.class)
     public final ResponseEntity<ErrorDetails> handleTicketStopped(TicketStoppedException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(),
-                request.getDescription(false));
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage());
         return new ResponseEntity<>(errorDetails, HttpStatus.OK);
     }
-
-
-    @ExceptionHandler(TicketInputDataExceptionOK.class)
-    public final ResponseEntity<ErrorDetails> handleTicketInputDataOK(TicketInputDataExceptionOK ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(),
-                request.getDescription(false));
-        return new ResponseEntity<>(errorDetails, HttpStatus.OK);
-    }
-
 
     @ExceptionHandler(TicketIncorrectInputDataException.class)
-    public final ResponseEntity<ErrorDetails> handleTicketInputDataBAD(TicketIncorrectInputDataException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(),
-                request.getDescription(false));
+    public final ResponseEntity<ErrorDetails> handleTicketIncorrectInputData(TicketIncorrectInputDataException ex, WebRequest request) {
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage());
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(CarAlreadyStartedException.class)
     public final ResponseEntity<ErrorDetails> handleCarDoesNotExist(CarAlreadyStartedException ex, WebRequest request) {
-        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(),
-                request.getDescription(false));
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage());
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(InvalidNumberPlateException.class)
+    public final ResponseEntity<ErrorDetails> handleCarDoesNotExist(InvalidNumberPlateException ex, WebRequest request) {
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage());
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
+    }
 
 }
