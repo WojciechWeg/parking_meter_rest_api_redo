@@ -11,11 +11,10 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tickets")
-@Setter
-@Getter
-@NoArgsConstructor
 public class TicketEntity {
 
+    public TicketEntity() {
+    }
 
     public TicketEntity(TicketType ticketType, LocalDateTime stampStart, LocalDateTime stampStop, String carNumberPlate) {
         this.ticketType = ticketType;
@@ -52,6 +51,62 @@ public class TicketEntity {
     @OneToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "cars_id")
     private CarEntity carEntity;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public TicketType getTicketType() {
+        return ticketType;
+    }
+
+    public void setTicketType(TicketType ticketType) {
+        this.ticketType = ticketType;
+    }
+
+    public BigDecimal getCharge() {
+        return charge;
+    }
+
+    public void setCharge(BigDecimal charge) {
+        this.charge = charge;
+    }
+
+    public LocalDateTime getStampStart() {
+        return stampStart;
+    }
+
+    public void setStampStart(LocalDateTime stampStart) {
+        this.stampStart = stampStart;
+    }
+
+    public LocalDateTime getStampStop() {
+        return stampStop;
+    }
+
+    public void setStampStop(LocalDateTime stampStop) {
+        this.stampStop = stampStop;
+    }
+
+    public String getCarNumberPlate() {
+        return carNumberPlate;
+    }
+
+    public void setCarNumberPlate(String carNumberPlate) {
+        this.carNumberPlate = carNumberPlate;
+    }
+
+    public CarEntity getCarEntity() {
+        return carEntity;
+    }
+
+    public void setCarEntity(CarEntity carEntity) {
+        this.carEntity = carEntity;
+    }
 
     public Duration getDuration() {
         return Duration.between(stampStart, stampStop);

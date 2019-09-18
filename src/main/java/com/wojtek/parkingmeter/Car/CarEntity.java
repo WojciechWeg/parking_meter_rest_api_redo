@@ -4,6 +4,7 @@ import com.wojtek.parkingmeter.Ticket.TicketEntity;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "cars")
 public class CarEntity {

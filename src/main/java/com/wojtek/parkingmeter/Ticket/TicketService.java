@@ -38,6 +38,7 @@ public class TicketService {
         validator.validateNewTicket(ticketType, numberPlate);
 
         TicketEntity newTicketEntity = new TicketEntity(TicketType.valueOf(ticketType.toUpperCase()), LocalDateTime.now(), numberPlate);
+        logger.info("new ticket entity id" + newTicketEntity.getId());
         CarEntity carEntity = new CarEntity(numberPlate);
         carEntity.addTicket(newTicketEntity);
         carRepository.save(carEntity);
@@ -63,19 +64,17 @@ public class TicketService {
         stopTicketEntity.setStampStop(LocalDateTime.now());
         logger.info("Charge for ticked id: " + id + " is " + chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration()));
         stopTicketEntity.setCharge(chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration()));
-        stopTicketEntity.setCarEntity(null);
 
-        //auto się nie usuwa z bazy
         CarEntity carEntity = stopTicketEntity.getCarEntity();
         if (carEntity != null) {
             Long carID = carEntity.getId();
-            carEntity.setTicket(null);
-            //carRepository.delete(carEntity);
             carRepository.deleteById(carID);
             logger.info("CarID: " + carID);
 
         }
 
+        stopTicketEntity.setCarEntity(null);
+        logger.info("stopTicketEntity id" + stopTicketEntity.getId());
         ticketRepository.save(stopTicketEntity);
 
         return ticketMapper.ticketEntityToTicketPutDTO(stopTicketEntity);

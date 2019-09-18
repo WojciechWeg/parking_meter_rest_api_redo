@@ -55,6 +55,7 @@ public class Validator {
 
         Optional<Integer> carID = carRepository.findIdByNrPlate(numberPlate);
 
+
         if(carID.isPresent())
             return true;
         else
