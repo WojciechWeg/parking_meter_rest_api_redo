@@ -120,12 +120,4 @@ public class TicketService {
 
     }
 
-
-    public BigDecimal checkSum() {
-
-        return ticketRepository.returnSumOfAllTickets().setScale(2);
-
-    }
-
-
 }

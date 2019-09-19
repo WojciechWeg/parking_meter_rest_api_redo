@@ -20,7 +20,6 @@ public class CarControllerTest {
     @MockBean
     private CarService currencyService;
 
-
     @Test
     public void getStatusOfExistingCar(){}
 
@@ -29,5 +28,17 @@ public class CarControllerTest {
 
     @Test
     public void checkInvalidNumberPlateException(){}
+
+    @Test
+    public void carOnaParkingNoTicket(){} //no such situation implemented yet
+
+    @Test
+    public void carOnaParkingHaveTicket(){} //no such situation implemented yet
+
+    @Test
+    public void noCarOnaParkingNoTicket(){} //no such situation implemented yet
+
+    @Test
+    public void noCarOnaParkingHaveTicket(){} //no such situation implemented yet
 
 }

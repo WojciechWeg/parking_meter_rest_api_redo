@@ -27,9 +27,4 @@ public class TicketController {
             return ticketService.checkCharge(id);
     }
 
-    @GetMapping("tickets/sum")
-    public BigDecimal checkSum() {
-        return ticketService.checkSum();
-    }
-
 }
