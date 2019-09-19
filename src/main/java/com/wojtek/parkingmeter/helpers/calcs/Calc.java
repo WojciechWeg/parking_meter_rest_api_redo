@@ -4,5 +4,5 @@ import java.math.BigDecimal;
 
 public interface Calc {
 
-    BigDecimal calculate(Long Duration);
+    BigDecimal calculate(Long duration);
 }

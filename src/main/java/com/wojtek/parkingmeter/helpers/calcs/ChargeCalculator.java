@@ -1,6 +1,6 @@
 package com.wojtek.parkingmeter.helpers.calcs;
 
-import com.wojtek.parkingmeter.Ticket.TicketType;
+import com.wojtek.parkingmeter.ticket.TicketType;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;

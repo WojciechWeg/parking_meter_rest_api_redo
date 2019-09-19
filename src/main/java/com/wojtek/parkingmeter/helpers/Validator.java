@@ -1,7 +1,7 @@
 package com.wojtek.parkingmeter.helpers;
 
-import com.wojtek.parkingmeter.Car.CarRepository;
-import com.wojtek.parkingmeter.Ticket.TicketRepository;
+import com.wojtek.parkingmeter.car.CarRepository;
+import com.wojtek.parkingmeter.ticket.TicketRepository;
 import com.wojtek.parkingmeter.exceptions.*;
 import org.springframework.stereotype.Component;
 

@@ -1,24 +1,19 @@
-package com.wojtek.parkingmeter.Ticket;
+package com.wojtek.parkingmeter.ticket;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class TicketStopDTO {
+public class TicketDTO {
+
+    public TicketDTO() {
+    }
 
     private TicketType ticketType;
 
     private LocalDateTime stampStart;
 
-    private LocalDateTime stampStop;
-
     private Long id;
 
     private String carNumberPlate;
-
-    private BigDecimal charge;
-
-    public TicketStopDTO() {
-    }
 
     public TicketType getTicketType() {
         return ticketType;
@@ -48,23 +43,7 @@ public class TicketStopDTO {
         return carNumberPlate;
     }
 
-    public void setCarNumberPlate(String carNumberPlate) {
-        this.carNumberPlate = carNumberPlate;
-    }
-
-    public BigDecimal getCharge() {
-        return charge;
-    }
-
-    public void setCharge(BigDecimal charge) {
-        this.charge = charge;
-    }
-
-    public LocalDateTime getStampStop() {
-        return stampStop;
-    }
-
-    public void setStampStop(LocalDateTime stampStop) {
-        this.stampStop = stampStop;
+    public void setCarNumberPlate(String carNumerPlate) {
+        this.carNumberPlate = carNumerPlate;
     }
 }

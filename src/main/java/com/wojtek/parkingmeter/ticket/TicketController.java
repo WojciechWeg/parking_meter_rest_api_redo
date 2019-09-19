@@ -1,4 +1,4 @@
-package com.wojtek.parkingmeter.Ticket;
+package com.wojtek.parkingmeter.ticket;
 
 import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;

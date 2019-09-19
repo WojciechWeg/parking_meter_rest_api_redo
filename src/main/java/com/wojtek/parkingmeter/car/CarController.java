@@ -1,4 +1,4 @@
-package com.wojtek.parkingmeter.Car;
+package com.wojtek.parkingmeter.car;
 
 import com.wojtek.parkingmeter.helpers.LaunchStatus;
 import org.springframework.web.bind.annotation.GetMapping;

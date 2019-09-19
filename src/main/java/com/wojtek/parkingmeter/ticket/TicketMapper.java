@@ -1,4 +1,4 @@
-package com.wojtek.parkingmeter.Ticket;
+package com.wojtek.parkingmeter.ticket;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

@@ -1,4 +1,4 @@
-package com.wojtek.parkingmeter.Ticket;
+package com.wojtek.parkingmeter.ticket;
 
 public class TicketStartDTO {
 

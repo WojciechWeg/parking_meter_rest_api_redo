@@ -1,6 +1,6 @@
-package com.wojtek.parkingmeter.Car;
+package com.wojtek.parkingmeter.car;
 
-import com.wojtek.parkingmeter.Ticket.TicketEntity;
+import com.wojtek.parkingmeter.ticket.TicketEntity;
 
 import javax.persistence.*;
 

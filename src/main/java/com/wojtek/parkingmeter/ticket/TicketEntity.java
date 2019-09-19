@@ -1,8 +1,5 @@
-package com.wojtek.parkingmeter.Ticket;
-import com.wojtek.parkingmeter.Car.CarEntity;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+package com.wojtek.parkingmeter.ticket;
+import com.wojtek.parkingmeter.car.CarEntity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package com.wojtek.parkingmeter.Car;
+package com.wojtek.parkingmeter.car;
 
 import com.wojtek.parkingmeter.helpers.Validator;
 import org.springframework.stereotype.Service;

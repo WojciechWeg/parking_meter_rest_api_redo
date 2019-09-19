@@ -1,4 +1,4 @@
-package com.wojtek.parkingmeter.Car;
+package com.wojtek.parkingmeter.car;
 
 
 import org.springframework.data.jpa.repository.Query;

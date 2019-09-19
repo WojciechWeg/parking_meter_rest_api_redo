@@ -1,8 +1,10 @@
-package com.wojtek.parkingmeter.Ticket;
+package com.wojtek.parkingmeter.ticket;
 
-import com.wojtek.parkingmeter.Car.CarEntity;
+import com.wojtek.parkingmeter.car.CarEntity;
 
-import com.wojtek.parkingmeter.Car.CarRepository;
+import com.wojtek.parkingmeter.car.CarRepository;
+import com.wojtek.parkingmeter.profit.ProfitEntity;
+import com.wojtek.parkingmeter.profit.ProfitRepository;
 import com.wojtek.parkingmeter.exceptions.TicketDoesNotExistException;
 import com.wojtek.parkingmeter.helpers.Validator;
 import com.wojtek.parkingmeter.helpers.calcs.ChargeCalculator;
@@ -11,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -19,14 +22,16 @@ public class TicketService {
 
     private final TicketRepository ticketRepository;
     private final CarRepository carRepository;
+    private final ProfitRepository profitRepository;
     private final TicketMapper ticketMapper;
     private final Logger logger;
     private final ChargeCalculator chargeCalculator;
     private final Validator validator;
 
-    public TicketService(TicketRepository ticketRepository, CarRepository carRepository, TicketMapper ticketMapper, ChargeCalculator chargeCalculator, Validator validator) {
+    public TicketService(TicketRepository ticketRepository, CarRepository carRepository, ProfitRepository profitRepository, TicketMapper ticketMapper, ChargeCalculator chargeCalculator, Validator validator) {
         this.ticketRepository = ticketRepository;
         this.carRepository = carRepository;
+        this.profitRepository = profitRepository;
         this.ticketMapper = ticketMapper;
         this.chargeCalculator = chargeCalculator;
         this.validator = validator;
@@ -63,7 +68,20 @@ public class TicketService {
 
         stopTicketEntity.setStampStop(LocalDateTime.now());
         logger.info("Charge for ticked id: " + id + " is " + chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration()));
-        stopTicketEntity.setCharge(chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration()));
+
+        BigDecimal charge = chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration());
+
+        stopTicketEntity.setCharge(charge);
+
+        //tutaj zapisz income
+        ProfitEntity profitEntity = new ProfitEntity();
+        //charge
+        profitEntity.setIncome(charge);
+        //date
+        profitEntity.setDate(LocalDate.now());
+        //save
+        profitRepository.save(profitEntity);
+
 
         CarEntity carEntity = stopTicketEntity.getCarEntity();
         if (carEntity != null) {
