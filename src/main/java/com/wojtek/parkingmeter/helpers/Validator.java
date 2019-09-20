@@ -3,6 +3,8 @@ package com.wojtek.parkingmeter.helpers;
 import com.wojtek.parkingmeter.car.CarRepository;
 import com.wojtek.parkingmeter.ticket.TicketRepository;
 import com.wojtek.parkingmeter.exceptions.*;
+import com.wojtek.parkingmeter.ticket.TicketType;
+import org.apache.commons.lang3.EnumUtils;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
@@ -30,7 +32,7 @@ public class Validator {
     private void isTicketInputDataOK(String ticketType, String numberPlate){
         checkNumberPlate(numberPlate);
 
-        // w tym miejscu chciałbym zwalidować ticket type ale nie wiem jak
+
     }
 
 
