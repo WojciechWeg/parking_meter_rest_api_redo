@@ -31,6 +31,12 @@ public class TicketControllerTest {
     public void postCreateNotValidTicketInvalidTicketType(){}
 
     @Test
+    public void postCreateMissingNrPlateField(){}
+
+    @Test
+    public void postCreateMissingTicketTypeField(){}
+
+    @Test
     public void postCreateNotValidTicketNoNrPlate(){}
 
     @Test
