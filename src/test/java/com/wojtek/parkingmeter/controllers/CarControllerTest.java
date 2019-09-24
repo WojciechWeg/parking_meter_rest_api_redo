@@ -35,8 +35,6 @@ public class CarControllerTest {
     @Test
     public void getStatusOfExistingCar() throws Exception {
 
-        LaunchStatus launchStatus = new LaunchStatus(true);
-
         when(carService.hasStarted(any())).thenReturn(true);
 
         MvcResult result = mockMvc.perform(MockMvcRequestBuilders
@@ -48,8 +46,6 @@ public class CarControllerTest {
 
     @Test
     public void getStatusOfNonExistingCar() throws Exception {
-
-        LaunchStatus launchStatus = new LaunchStatus(false);
 
         when(carService.hasStarted(any())).thenReturn(false);
 
@@ -64,8 +60,6 @@ public class CarControllerTest {
     @Test
     public void checkInvalidNumberPlateException() throws Exception {
 
-
-
         when(carService.hasStarted(any())).thenThrow(new InvalidNumberPlateException("Invalid number plate"));
 
         MvcResult result = mockMvc.perform(MockMvcRequestBuilders
@@ -77,15 +71,29 @@ public class CarControllerTest {
     }
 
     @Test
-    public void carOnaParkingNoTicket(){} //no such situation implemented yet
+    public void carOnaParkingNoTicket() throws Exception {
+
+        when(carService.hasStarted(any())).thenReturn(false);
+
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders
+                .get("/cars/00000/launch-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.started", Matchers.is(false)))
+                .andReturn();
+
+    }
 
     @Test
-    public void carOnaParkingHaveTicket(){} //no such situation implemented yet
+    public void carOnaParkingHaveTicket() throws Exception {
 
-    @Test
-    public void noCarOnaParkingNoTicket(){} //no such situation implemented yet
+        when(carService.hasStarted(any())).thenReturn(true);
 
-    @Test
-    public void noCarOnaParkingHaveTicket(){} //no such situation implemented yet
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders
+                .get("/cars/00000/launch-status"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.started", Matchers.is(true)))
+                .andReturn();
+
+    }
 
 }
