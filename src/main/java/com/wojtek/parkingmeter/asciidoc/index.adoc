@@ -1,0 +1,133 @@
+= Parking Meter REST API Docs
+Wojciech Węgierek;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc:
+
+== Parking Meter API
+
+=== Ticket Controller
+
+==== POST
+
+Post method allows to retrieve new ticket from parking meter.
+
+Curls request:
+
+include::{snippets}\ticketcontroller\post\curl-request.adoc[]
+
+Request body:
+include::{snippets}\ticketcontroller\post\request-body.adoc[]
+
+Request fields:
+include::{snippets}\ticketcontroller\post\request-fields.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}\ticketcontroller\post\http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}\ticketcontroller\post\http-response.adoc[]
+
+Response body:
+include::{snippets}\ticketcontroller\post\response-body.adoc[]
+
+Response fields:
+include::{snippets}\ticketcontroller\post\response-fields.adoc[]
+
+==== PUT
+
+Put method allows to stop ticket.
+
+Curl:
+include::{snippets}\ticketcontroller\put\curl-request.adoc[]
+
+Http request:
+include::{snippets}\ticketcontroller\put\http-request.adoc[]
+
+Path parameters:
+include::{snippets}\ticketcontroller\put\path-parameters.adoc[]
+
+Http response:
+include::{snippets}\ticketcontroller\put\http-response.adoc[]
+
+Response body:
+include::{snippets}\ticketcontroller\put\response-body.adoc[]
+
+Response fields:
+include::{snippets}\ticketcontroller\put\response-fields.adoc[]
+
+==== GET
+
+Get method allows to retrieve charge of ticket.
+
+Curl:
+
+include::{snippets}\ticketcontroller\get\curl-request.adoc[]
+
+Http request:
+include::{snippets}\ticketcontroller\get\http-request.adoc[]
+
+Path parameters:
+include::{snippets}\ticketcontroller\get\path-parameters.adoc[]
+
+Http response:
+include::{snippets}\ticketcontroller\get\http-response.adoc[]
+
+In response you will obtain BigDecimal value representing value of charge.
+
+Response body:
+include::{snippets}\ticketcontroller\get\response-body.adoc[]
+
+
+
+=== Car Controller
+
+Car controller allows to check if given car has valid ticket.
+
+
+One showing how to make a request using cURL:
+
+include::{snippets}\carcontroller\curl-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}\carcontroller\http-request.adoc[]
+
+Path parameters:
+
+include::{snippets}\carcontroller\path-parameters.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}\carcontroller\http-response.adoc[]
+
+Response Body:
+include::{snippets}\carcontroller\response-body.adoc[]
+
+Response Fields:
+include::{snippets}\carcontroller\response-fields.adoc[]
+
+=== Profit Controller
+
+Profit controller allows to find profit any given day.
+
+One showing how to make a request using cURL:
+
+include::{snippets}\profitcontroller\curl-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}\profitcontroller\http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}\profitcontroller\http-response.adoc[]
+
+Response Body:
+include::{snippets}\profitcontroller\response-body.adoc[]
+
+
+
