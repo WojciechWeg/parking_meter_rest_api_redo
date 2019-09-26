@@ -43,7 +43,7 @@ public class TicketService {
         validator.validateNewTicket(ticketType, numberPlate);
 
         TicketEntity newTicketEntity = new TicketEntity(TicketType.valueOf(ticketType.toUpperCase()), LocalDateTime.now(), numberPlate);
-        logger.info("new ticket entity id" + newTicketEntity.getId());
+
         CarEntity carEntity = new CarEntity(numberPlate);
         carEntity.addTicket(newTicketEntity);
         carRepository.save(carEntity);

@@ -2,8 +2,6 @@ package com.wojtek.parkingmeter.car;
 
 import com.wojtek.parkingmeter.helpers.Validator;
 import com.wojtek.parkingmeter.ticket.TicketRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
