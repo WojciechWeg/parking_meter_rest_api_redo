@@ -102,23 +102,39 @@ public class TicketControllerTest {
 
     }
 
-    @Test
-    public void postCreateNotValidTicketInvalidTicketType() throws Exception {
-
-       //trzeba zrobić sensowną obsługę wyjątku InvalidFormatException
-
-    }
 
     @Test
     public void postCreateMissingNrPlateField() throws Exception {
 
-       //trzeba zrobić obsługę braku jednego pola
+        ticketStartDTO.setTicketType(null);
+
+        when(ticketService.startTicket(any(),any())).thenReturn(null);
+
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders
+                .post("/tickets")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(asJsonString(ticketStartDTO)))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$").doesNotExist())
+                .andReturn();
+
     }
 
     @Test
-    public void postCreateMissingTicketTypeField(){
+    public void postCreateMissingTicketTypeField() throws Exception {
 
-        //trzeba zrobić obsługę braku jednego pola
+
+        ticketStartDTO.setCarNumberPlate(null);
+
+        when(ticketService.startTicket(any(),any())).thenReturn(null);
+
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders
+                .post("/tickets")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(asJsonString(ticketStartDTO)))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$").doesNotExist())
+                .andReturn();
 
     }
 
@@ -142,12 +158,6 @@ public class TicketControllerTest {
 
     }
 
-    @Test
-    public void putStopStoppedTicket(){
-
-        //zatrzymanie już zatrzymanego biletu nie działa
-
-    }
 
     @Test
     public void getChargeOfExistingTicket() throws Exception {

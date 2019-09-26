@@ -1,12 +1,14 @@
 package com.wojtek.parkingmeter.ticket;
 
+import javax.validation.constraints.NotNull;
+
 public class TicketStartDTO {
 
-
+    @NotNull
     private String carNumberPlate;
 
+    @NotNull
     private TicketType ticketType;
-
 
     public String getCarNumberPlate() {
         return carNumberPlate;

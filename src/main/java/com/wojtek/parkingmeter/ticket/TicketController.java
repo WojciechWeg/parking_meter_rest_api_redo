@@ -1,6 +1,8 @@
 package com.wojtek.parkingmeter.ticket;
 
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 import java.math.BigDecimal;
 
 @RestController
@@ -13,7 +15,7 @@ public class TicketController {
     }
 
     @PostMapping("/tickets")
-    public TicketDTO startTicket(@RequestBody TicketStartDTO ticketStartDTO) {
+    public TicketDTO startTicket(@Valid @RequestBody TicketStartDTO ticketStartDTO) {
         return ticketService.startTicket(ticketStartDTO.getTicketType().toString(), ticketStartDTO.getCarNumberPlate());
     }
 
