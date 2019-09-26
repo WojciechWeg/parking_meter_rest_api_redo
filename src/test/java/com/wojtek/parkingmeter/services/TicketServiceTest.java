@@ -2,6 +2,7 @@ package com.wojtek.parkingmeter.services;
 
 import com.wojtek.parkingmeter.car.CarEntity;
 import com.wojtek.parkingmeter.car.CarRepository;
+import com.wojtek.parkingmeter.exceptions.InvalidNumberPlateException;
 import com.wojtek.parkingmeter.exceptions.TicketDoesNotExistException;
 import com.wojtek.parkingmeter.helpers.Validator;
 import com.wojtek.parkingmeter.helpers.calcs.ChargeCalculator;
@@ -102,7 +103,15 @@ public class TicketServiceTest {
         assertEquals(ticketDTO.getStampStart(),ticketDTOreturned.getStampStart());
         assertEquals(ticketDTO.getId(),ticketDTOreturned.getId());
 
-    };
+    }
+
+
+    @Test
+    public void startTicketWithInvalidNumberPlate(){
+
+        assertThrows(InvalidNumberPlateException.class, () -> ticketService.startTicket(TicketType.REGULAR.toString(),"123456"));
+
+    }
 
     @Test
     public void stopValidTicket(){
@@ -140,6 +149,13 @@ public class TicketServiceTest {
         BigDecimal chargeReturned = ticketService.checkCharge("1");
 
         assertEquals(BigDecimal.valueOf(0),chargeReturned);
+    }
+
+    @Test
+    public void checkChargeOfNonExistingTicket(){
+
+        assertThrows(TicketDoesNotExistException.class, () -> ticketService.stopTicket("111"));
+
     }
 
 }
