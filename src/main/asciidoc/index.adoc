@@ -63,6 +63,14 @@ include::{snippets}\ticketcontroller\put\response-fields.adoc[]
 
 Get method allows to retrieve charge of ticket.
 
+
+.Charge table
+|===
+| Ticket type | 1st hour | 2nd hour | 3rd and each next hour
+|regular		| 1 PLN    |2 PLN    | 1.5 x more than hour before
+|disabled       | free	   | 2 PLN   | 1.2 x more than hour before
+|===
+
 Curl:
 
 include::{snippets}\ticketcontroller\get\curl-request.adoc[]
