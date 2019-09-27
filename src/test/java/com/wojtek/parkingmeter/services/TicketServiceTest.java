@@ -4,6 +4,7 @@ import com.wojtek.parkingmeter.car.CarEntity;
 import com.wojtek.parkingmeter.car.CarRepository;
 import com.wojtek.parkingmeter.exceptions.InvalidNumberPlateException;
 import com.wojtek.parkingmeter.exceptions.TicketDoesNotExistException;
+import com.wojtek.parkingmeter.exceptions.TicketStoppedException;
 import com.wojtek.parkingmeter.helpers.Validator;
 import com.wojtek.parkingmeter.helpers.calcs.ChargeCalculator;
 import com.wojtek.parkingmeter.profit.ProfitRepository;
@@ -28,7 +29,7 @@ public class TicketServiceTest {
     Validator validator;
     TicketService ticketService;
 
-    TicketEntity ticketEntity;
+    TicketEntity ticketEntity,ticketEntity1;
     TicketStartDTO ticketStartDTO;
     TicketStopDTO ticketStopDTO;
     TicketDTO ticketDTO;
@@ -86,13 +87,21 @@ public class TicketServiceTest {
         ticketEntity.setId(1L);
         ticketEntity.setCharge(BigDecimal.valueOf(0));
         ticketEntity.setCarEntity(carEntity);
+
+        ticketEntity1 = new TicketEntity();
+
+        ticketEntity1.setCarNumberPlate("12345");
+        ticketEntity1.setTicketType(TicketType.REGULAR);
+        ticketEntity1.setStampStart(LocalDateTime.now());
+        ticketEntity1.setId(2L);
+        ticketEntity1.setCarEntity(carEntity);
     }
 
     @Test
     public void startValidTicket(){
 
         when(carRepository.save(any())).thenReturn(carEntity);
-        when(ticketRepository.save(any())).thenReturn(ticketEntity);
+        when(ticketRepository.save(any())).thenReturn(ticketEntity1);
         when(ticketMapper.ticketToTicketDTO(any())).thenReturn(ticketDTO);
 
         TicketDTO  ticketDTOreturned = ticketService.startTicket(TicketType.REGULAR.toString(),"12345");
@@ -116,18 +125,17 @@ public class TicketServiceTest {
     @Test
     public void stopValidTicket(){
 
-        when(ticketRepository.findById(any())).thenReturn(Optional.of(ticketEntity));
+        when(ticketRepository.findById(any())).thenReturn(Optional.of(ticketEntity1));
         when(chargeCalculator.charge(any(),any())).thenReturn(BigDecimal.ZERO);
-        when(ticketRepository.save(any())).thenReturn(ticketEntity);
+        when(ticketRepository.save(any())).thenReturn(ticketEntity1);
         when(ticketMapper.ticketEntityToTicketPutDTO(any())).thenReturn(ticketStopDTO);
 
-        TicketStopDTO ticketStopDTOReturned = ticketService.stopTicket("1");
+        TicketStopDTO ticketStopDTOReturned = ticketService.stopTicket("2");
 
         assertEquals(ticketStopDTOReturned.getId(), ticketStopDTO.getId());
         assertEquals(ticketStopDTOReturned.getCharge(), ticketStopDTO.getCharge());
         assertEquals(ticketStopDTOReturned.getCarNumberPlate(), ticketStopDTO.getCarNumberPlate());
         assertEquals(ticketStopDTOReturned.getStampStart(), ticketStopDTO.getStampStart());
-        assertEquals(ticketStopDTOReturned.getStampStop(), ticketStopDTO.getStampStop());
         assertEquals(ticketStopDTOReturned.getTicketType(), ticketStopDTO.getTicketType());
 
     }
@@ -155,6 +163,16 @@ public class TicketServiceTest {
     public void checkChargeOfNonExistingTicket(){
 
         assertThrows(TicketDoesNotExistException.class, () -> ticketService.stopTicket("111"));
+
+    }
+
+
+    @Test
+    public void stopAlreadyStoppedTicket(){
+
+        when(ticketRepository.findById(any())).thenReturn(Optional.ofNullable(ticketEntity));
+
+        assertThrows(TicketStoppedException.class, ()->ticketService.stopTicket("1"));
 
     }
 

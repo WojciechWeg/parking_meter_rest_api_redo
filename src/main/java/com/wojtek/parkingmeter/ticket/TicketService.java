@@ -3,6 +3,7 @@ package com.wojtek.parkingmeter.ticket;
 import com.wojtek.parkingmeter.car.CarEntity;
 
 import com.wojtek.parkingmeter.car.CarRepository;
+import com.wojtek.parkingmeter.exceptions.TicketStoppedException;
 import com.wojtek.parkingmeter.profit.ProfitEntity;
 import com.wojtek.parkingmeter.profit.ProfitRepository;
 import com.wojtek.parkingmeter.exceptions.TicketDoesNotExistException;
@@ -65,6 +66,9 @@ public class TicketService {
         stopTicketOpt.orElseThrow(() ->  new TicketDoesNotExistException("Ticket with given ID does not exist: " + id));
 
         TicketEntity stopTicketEntity = stopTicketOpt.get();
+
+        if(stopTicketEntity.getStampStop()!=null)
+            throw new TicketStoppedException("Ticket stopped already");
 
         stopTicketEntity.setStampStop(LocalDateTime.now());
         logger.info("Charge for ticked id: " + id + " is " + chargeCalculator.charge(stopTicketEntity.getTicketType(),stopTicketEntity.getDuration()));
