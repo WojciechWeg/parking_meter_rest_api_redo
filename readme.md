@@ -11,3 +11,5 @@ For more details have a look into [docs.](https://wojciechweg.github.io/parking_
 To start the project locally use start.bat file.
 
 Java 1.8 necessary to run project.
+
+Project made in Spring Boot Framework.
